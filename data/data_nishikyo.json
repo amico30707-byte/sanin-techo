@@ -1,0 +1,130 @@
+[
+ {
+  "id": "mihara",
+  "ward": "西京区",
+  "name": "身原病院",
+  "type": "産婦人科の病院",
+  "total": {
+   "avg": 556000,
+   "med": 522000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 0,
+   "text": "全室個室。スタンダードのお部屋は差額なし。ほかのお部屋は1日3,000〜12,000円の追加"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（24時間・計画分娩）。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません（週2回、フランス料理のシェフの食事あり）"
+  },
+  "tachiai": "できる（夫やパートナー、お子様、ご両親、ごきょうだい）",
+  "family": "面会できる（間柄の制限なし）",
+  "care": "京都市の産後ケアに参加（泊まりのみ・1か月未満から）。食事は朝880円・昼1,650円・夜2,200円。お部屋のグレードアップは1日3,000〜12,000円",
+  "extra": [
+   "阪急上桂駅前",
+   "全室シャワー・トイレ付き"
+  ],
+  "src": [
+   [
+    "出産なび 身原病院",
+    "https://birth-navi.mhlw.go.jp/facilities/12111?tab=delivery"
+   ],
+   [
+    "身原病院 ホームページ",
+    "https://mihara.com/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "mitsubishi",
+  "ward": "西京区",
+  "name": "三菱京都病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 561000,
+   "med": 550000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 13200,
+   "text": "個室は1日13,200円の追加"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 130000,
+   "text": "希望でできる（24時間ではない・計画分娩）。130,000円"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー）",
+  "family": "面会は4人まで",
+  "care": "京都市の産後ケアに参加（泊まりのみ・1か月未満から・お部屋があいているとき）。個室は1日26,400円。食事代は変更の予定ありと市の一覧に記載（産院に確認）",
+  "extra": [
+   "阪急桂駅から無料の送迎バスあり"
+  ],
+  "src": [
+   [
+    "出産なび 三菱京都病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10541?tab=delivery"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "katsura",
+  "ward": "西京区",
+  "name": "京都桂病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 439000,
+   "med": 426000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 13200,
+   "text": "個室は1日13,200円の追加"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（24時間ではない・計画分娩）。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで）",
+  "family": "面会は2人まで。赤ちゃんとは別のお部屋（母子別室）",
+  "care": "京都市の産後ケアに参加（泊まりのみ・3か月未満）。食事は1食830円",
+  "extra": [
+   "阪急桂駅・JR桂川駅から無料の送迎バスあり"
+  ],
+  "src": [
+   [
+    "出産なび 京都桂病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10649?tab=delivery"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ }
+]

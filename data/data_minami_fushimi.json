@@ -1,0 +1,349 @@
+[
+ {
+  "id": "shimaoka",
+  "ward": "南区",
+  "name": "島岡医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 797000,
+   "med": 797000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 5000,
+   "text": "全室個室。スタンダード1日5,000円、ジュニアスタンダード8,000円、スイート10,000円"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（24時間）。費用は出産なびの外のページにあり、まだ確認できていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（人数・間柄の制限なし）",
+  "family": "面会できる",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り、6か月未満）。食事代の負担なし。曜日によって2時間まで無料の託児あり",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 島岡医院",
+    "https://birth-navi.mhlw.go.jp/facilities/10969?tab=delivery"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "daini-adachi",
+  "ward": "南区",
+  "name": "第二足立病院",
+  "type": "産婦人科の病院",
+  "total": {
+   "avg": 542000,
+   "med": 543000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 6000,
+   "text": "個室は1日6,000円・7,000円・9,000円・12,000円"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません（自然なお産を大切にする方針）"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "お祝い膳の記載なし。退院のときにお祝いの鯛のプレゼントあり"
+  },
+  "tachiai": "できる（2人まで・夫やパートナー、お子様、ご両親、ごきょうだい）。たたみのお部屋でのお産もできる",
+  "family": "上のお子様といっしょに入院できるお部屋あり（原則12,000円・1室のみ）",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り、3か月未満）。大人の食事は朝700円・昼1,300円・夜2,000円",
+  "extra": [
+   "全室、赤ちゃんといっしょのお部屋（母子同室）"
+  ],
+  "src": [
+   [
+    "出産なび 第二足立病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10212?tab=delivery"
+   ],
+   [
+    "第二足立病院 産科",
+    "https://www.dainiadachi.or.jp/obstetrics"
+   ],
+   [
+    "第二足立病院 母児入院",
+    "https://www.dainiadachi.or.jp/care_01"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "nakabe",
+  "ward": "伏見区",
+  "name": "中部産婦人科医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 615000,
+   "med": 612000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 0,
+   "text": "個室あり。ホームページでは、お産の料金（540,000円から）にお部屋代がふくまれています"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 100000,
+   "text": "希望でできる（24時間・日にちを決めて入院）。100,000円（無痛分娩教室に出ないときは＋5万円、夜間は追加あり）"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝いディナーあり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（人数・間柄の制限なし）",
+  "family": "面会は制限あり",
+  "care": "京都市の産後ケアに参加（泊まりのみ・1か月未満から）。食事代1日3,000円、消耗品代1日1,000円",
+  "extra": [
+   "赤ちゃんの写真撮影は無料",
+   "京阪・近鉄の向島駅から歩いて2分"
+  ],
+  "src": [
+   [
+    "出産なび 中部産婦人科医院",
+    "https://birth-navi.mhlw.go.jp/facilities/12148?tab=delivery"
+   ],
+   [
+    "中部産婦人科 無痛分娩",
+    "https://www.nakabe.or.jp/painless.php"
+   ],
+   [
+    "中部産婦人科 産科",
+    "https://www.nakabe.or.jp/obstetrics.php"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "daigo",
+  "ward": "伏見区",
+  "name": "醍醐渡辺クリニック",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 562000,
+   "med": 558000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 5250,
+   "text": "個室は1日5,250〜11,550円、2人部屋は2,100〜4,200円（出産なび）"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（24時間）。ホームページでは、お産の料金に＋7〜8万円"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": 0,
+   "text": "病院からのお祝いとしてディナーあり。ご家族も有料で同じ食事をたのめる"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー、ご両親）",
+  "family": "面会はご家族と上のお子様のみ（14時〜20時）",
+  "care": "京都市の産後ケアに参加（泊まりのみ・1か月未満から。一度退院した方は使えません）。食事代1日3,300円、衛生材料費4,380円",
+  "extra": [
+   "ホームページの目安：はじめてのお産は個室55万円から、2人部屋52万円から"
+  ],
+  "src": [
+   [
+    "出産なび 醍醐渡辺クリニック",
+    "https://birth-navi.mhlw.go.jp/facilities/11546?tab=delivery"
+   ],
+   [
+    "醍醐渡辺クリニック 費用",
+    "https://hospital.d-w-c.jp/fee/"
+   ],
+   [
+    "醍醐渡辺クリニック 入院",
+    "https://hospital.d-w-c.jp/hospitalize/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "kyoto-iryo",
+  "ward": "伏見区",
+  "name": "京都医療センター",
+  "type": "大きな病院",
+  "total": {
+   "avg": 583000,
+   "med": 583000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 8000,
+   "text": "4人部屋は追加なし。個室Cは1日8,000円、LDR10,000円、個室E15,000円、特別室15,000円から"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 100000,
+   "text": "希望でできる（24時間）。約100,000円。34週ごろまでに相談"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー、お子様、ご両親）",
+  "family": "面会は2人まで。お子様の面会は一部の個室のみ",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り、3か月未満）。食事は1食500円（持ちこみもOK）",
+  "extra": [
+   "京阪の藤森駅から歩いて8分"
+  ],
+  "src": [
+   [
+    "出産なび 京都医療センター",
+    "https://birth-navi.mhlw.go.jp/facilities/10638?tab=delivery"
+   ],
+   [
+    "京都医療センター 無痛分娩",
+    "https://kyoto.hosp.go.jp/html/guide/medicalinfo/obstetricsgynecology/painless.html"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "fujita",
+  "ward": "伏見区",
+  "name": "藤田産科・婦人科医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 566000,
+   "med": 556000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "全室個室。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝いの夜に洋食のコースあり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り、2か月未満）。食事は朝960円・昼1,320円・夜1,560円",
+  "extra": [
+   "駐車場なし"
+  ],
+  "src": [
+   [
+    "出産なび 藤田産科・婦人科医院",
+    "https://birth-navi.mhlw.go.jp/facilities/11077?tab=delivery"
+   ],
+   [
+    "藤田産科・婦人科医院 入院",
+    "https://fujita-ladies.jp/hospitalization/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "takeda",
+  "ward": "伏見区",
+  "name": "武田総合病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 456000,
+   "med": 467000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 0,
+   "text": "個室は差額なし（シャワー・トイレ付きの1室だけ1日15,400円）"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー）",
+  "family": "面会は2人まで",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 武田総合病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10105?tab=delivery"
+   ]
+  ]
+ },
+ {
+  "id": "kimura",
+  "ward": "伏見区",
+  "name": "やすらぎの森 木村助産院",
+  "type": "助産所",
+  "total": {
+   "avg": 529000,
+   "med": 529000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（人数の制限なし）",
+  "family": "面会できる（お子様・お友だちもOK）",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび やすらぎの森 木村助産院",
+    "https://birth-navi.mhlw.go.jp/facilities/11922?tab=delivery"
+   ]
+  ]
+ }
+]

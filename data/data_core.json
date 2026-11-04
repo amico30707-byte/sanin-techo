@@ -1,0 +1,399 @@
+[
+ {
+  "id": "kyodai",
+  "ward": "左京区",
+  "name": "京都大学医学部附属病院",
+  "type": "大学病院",
+  "total": {
+   "avg": 642000,
+   "med": 644000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 17000,
+   "text": "個室は1日17,000円の追加（空きがあれば）"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "お母様の希望ではできません（医学的に必要なときのみ）"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー）",
+  "family": "面会は2人まで",
+  "care": "京都市の産後ケア（スマイルママ・ホッと事業）の一覧には入っていません",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 京都大学医学部附属病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10732?tab=delivery"
+   ],
+   [
+    "京大病院 産科 費用のページ",
+    "https://obgy.kuhp.kyoto-u.ac.jp/sanka/medical_practice/expense.html"
+   ]
+  ]
+ },
+ {
+  "id": "kawamura",
+  "ward": "左京区",
+  "name": "川村産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 582000,
+   "med": 575000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "全室トイレ付きの個室。お部屋のタイプごとの差額は公開されていません"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（24時間）。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "シェフのお祝いディナーあり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる",
+  "family": "夫・上のお子様と泊まれるお部屋あり。面会は原則21時まで",
+  "care": "京都市の産後ケアに参加（3か月未満）。食事は朝700円・昼1,100円・夜1,600円。上のお子様の食事は1食750円",
+  "extra": [
+   "ホームページでは、ふつうのお産（産後5日）52万円から",
+   "3人目以降は分娩料が半額。2026年2月以降が予定日の方は、この産院で以前にお産をした方が対象"
+  ],
+  "src": [
+   [
+    "出産なび 川村産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/12036?tab=delivery"
+   ],
+   [
+    "川村産婦人科 入院のご案内",
+    "https://www.kawamura-lc.net/hospital"
+   ],
+   [
+    "川村産婦人科 お食事",
+    "https://www.kawamura-lc.net/meal"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ },
+ {
+  "id": "maaru",
+  "ward": "左京区",
+  "name": "出張さんばステーション聖護院 海（まある）助産所",
+  "type": "助産所",
+  "total": {
+   "avg": 541000,
+   "med": 552000
+  },
+  "days": 4,
+  "room": {
+   "perDay": null,
+   "text": "助産所のお部屋（ふつうのおうちのつくり）"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "公開されていません",
+  "family": "公開されていません",
+  "care": "京都市の産後ケアに参加（1歳未満まで・上のお子様もいっしょにOK）。大人の食事は朝1,500円・昼2,000円・夜2,000円",
+  "extra": [
+   "ホームページでは、入院のお産は55万円前後（4〜5日）、ご自宅でのお産は50万円前後"
+  ],
+  "src": [
+   [
+    "出産なび 海（まある）助産所",
+    "https://birth-navi.mhlw.go.jp/facilities/11709?tab=delivery"
+   ],
+   [
+    "海（まある）助産所 ホームページ",
+    "https://www.sanba-mar.info/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ },
+ {
+  "id": "adachi",
+  "ward": "中京区",
+  "name": "足立病院",
+  "type": "産婦人科の病院",
+  "total": {
+   "avg": 642000,
+   "med": 616000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 10000,
+   "text": "お産の入院は原則個室。出産なびでは個室の差額は1日10,000円（ホームページの実績では0〜10,000円、まん中の値は8,000円）"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 150000,
+   "text": "希望でできる（24時間・麻酔科の先生）。約150,000円"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（大人1人まで＋お子様は人数の制限なし）",
+  "family": "上のお子様は分娩室でいっしょに過ごせる",
+  "care": "京都市の産後ケアに参加（3か月未満）。食事は朝880円・昼1,650円・夜2,200円。お部屋のグレードアップは1日11,000円",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 足立病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10078?tab=delivery"
+   ],
+   [
+    "足立病院 入院のご案内",
+    "https://www.adachi-hospital.com/hospitalization/"
+   ],
+   [
+    "足立病院 無痛分娩",
+    "https://www.adachi-hospital.com/abor_analgesia/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ },
+ {
+  "id": "shiritsu",
+  "ward": "中京区",
+  "name": "京都市立病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 525000,
+   "med": 538000
+  },
+  "days": 7,
+  "room": {
+   "perDay": null,
+   "text": "個室はあり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "2人目以降のお母様は、計画分娩での無痛分娩もできる（34週ごろまでに申し出）。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": false,
+   "cost": null,
+   "text": "豪華なお食事はないと案内されています"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "京都市の産後ケアに参加（泊まりのみ・3か月未満）。食事は1食740円（2026年6月から）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 京都市立病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10158?tab=delivery"
+   ],
+   [
+    "京都市立病院 当院で出産をお考えの方へ",
+    "https://www.kch-org.jp/%e5%bd%93%e9%99%a2%e3%81%a7%e5%87%ba%e7%94%a3%e3%82%92%e3%81%8a%e8%80%83%e3%81%88%e3%81%ae%e6%96%b9%e3%81%b8"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ },
+ {
+  "id": "yamamoto",
+  "ward": "中京区",
+  "name": "山元病院",
+  "type": "産婦人科の病院",
+  "total": {
+   "avg": 499000,
+   "med": 538000
+  },
+  "days": 7,
+  "room": {
+   "perDay": null,
+   "text": "個室・家族室・特別室からえらぶ。料金は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": 3300,
+   "text": "お祝い膳 3,000円（税別）。火・金曜の夕食"
+  },
+  "tachiai": "できる（夫やパートナー、お子様、ご両親）",
+  "family": "面会は夫やパートナー、お子様、ご両親、ごきょうだい",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [
+   "ホームページでは、ふつうのお産で45万円前後＋お部屋代×日数",
+   "3人目以降は分娩料が無料"
+  ],
+  "src": [
+   [
+    "出産なび 山元病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10065?tab=delivery"
+   ],
+   [
+    "山元病院 入院のご案内",
+    "https://www.yamamoto-hospital.gr.jp/guidance/"
+   ]
+  ]
+ },
+ {
+  "id": "hosoda",
+  "ward": "右京区",
+  "name": "細田クリニック",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 553000,
+   "med": 553000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "全室おなじつくりの個室。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "面会は10時〜19時",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [
+   "2026年12月下旬までのお産の予約は締め切り（ホームページ）"
+  ],
+  "src": [
+   [
+    "出産なび 細田クリニック",
+    "https://birth-navi.mhlw.go.jp/facilities/12031?tab=delivery"
+   ],
+   [
+    "細田クリニック ご案内",
+    "https://hosodaclinic.jp/guide/"
+   ]
+  ]
+ },
+ {
+  "id": "kashiwagi",
+  "ward": "右京区",
+  "name": "柏木産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 516000,
+   "med": 505000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "全室トイレ・シャワー付き。差額はあるが金額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（2人まで・上のお子様も）",
+  "family": "夫・お子様のお泊まりができる。面会は家族のみ13時〜20時",
+  "care": "京都市の産後ケアに参加。泊まり1日3,000円（3食とおやつ込み）と市の一覧に記載",
+  "extra": [
+   "続けてお産をする方へのサービスがあるようです（くわしくは産院へ）"
+  ],
+  "src": [
+   [
+    "出産なび 柏木産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/11616?tab=delivery"
+   ],
+   [
+    "柏木産婦人科 産科",
+    "https://www.kwh.jp/obstetrics/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ },
+ {
+  "id": "miniren",
+  "ward": "右京区",
+  "name": "京都民医連中央病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 443000,
+   "med": 470000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 0,
+   "text": "差額ベッド代はいただかないと案内されています"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 100000,
+   "text": "希望でできる（24時間ではない・先着順）。100,000円（お薬をつかう場合120,000円）"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（人数の制限なし）",
+  "family": "面会できる",
+  "care": "京都市の産後ケアに参加（3か月未満）。食事は1食704円",
+  "extra": [
+   "無痛分娩（和痛分娩）は2026年7月に始まったばかりです"
+  ],
+  "src": [
+   [
+    "出産なび 京都民医連中央病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10057?tab=delivery"
+   ],
+   [
+    "京都民医連中央病院 和痛分娩",
+    "https://kyoto-min-iren-c-hp.jp/system/kakuka/watsubunben.html"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "CITY"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,143 @@
+[
+ {
+  "id": "tamura",
+  "ward": "亀岡市",
+  "name": "田村産婦人科医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 592000,
+   "med": 577000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "特別室・個室A・B・C・2人部屋あり。個室の差額は公開されていません"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "無痛分娩はしていません。痛みをやわらげるお薬をつかう和痛分娩あり"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません（15時におやつあり）"
+  },
+  "tachiai": "できる（夫やパートナー1人のみ。帝王切開のときはできません）",
+  "family": "面会は2人まで（14〜15時・一部の曜日は20〜21時）。中学生までのお子様の面会はひかえるようお願いあり",
+  "care": "亀岡市の産後ケアに参加（泊まり・日帰り）。食事は1食550円。上のお子様（小学校に入る前）もいっしょにすごせる",
+  "extra": [
+   "病院のページの目安：ふつうのお産で55万円から"
+  ],
+  "src": [
+   [
+    "出産なび 田村産婦人科医院",
+    "https://birth-navi.mhlw.go.jp/facilities/11359?tab=delivery"
+   ],
+   [
+    "田村産婦人科医院 入院について",
+    "https://tamura-hp.com/guide/"
+   ],
+   [
+    "田村産婦人科医院 よくあるご質問",
+    "https://tamura-hp.com/faq/"
+   ],
+   [
+    "田村産婦人科医院 産後ケア",
+    "https://tamura-hp.com/postpartum_care/"
+   ],
+   [
+    "亀岡市 産後ケア料金表（令和8年度）",
+    "https://www.city.kameoka.kyoto.jp/uploaded/attachment/46968.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "yamaguchi",
+  "ward": "亀岡市",
+  "name": "山口マタニティクリニック",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 560000,
+   "med": 559000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "亀岡市の産後ケアに参加（泊まり）。食事は朝1,000円・昼2,000円・夜3,000円。お部屋代は個室なら1泊目10,000円、大部屋なら4,000円（2泊目は0円）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 山口マタニティクリニック",
+    "https://birth-navi.mhlw.go.jp/facilities/11276?tab=delivery"
+   ],
+   [
+    "亀岡市 産後ケア料金表（令和8年度）",
+    "https://www.city.kameoka.kyoto.jp/uploaded/attachment/46968.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "kyoto-chubu",
+  "ward": "南丹市",
+  "name": "京都中部総合医療センター",
+  "type": "大きな病院",
+  "total": {
+   "avg": 533000,
+   "med": 537000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 6600,
+   "text": "個室Bは1日6,600円、シャワー付きの個室Aは1日7,150円。4人部屋もあり"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "お母様の希望ではできません（医学的に必要なときのみ）"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝い膳は2回あり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（事前にマタニティクラスに出る）",
+  "family": "病院全体のきまりでは、面会は14〜17時・15分まで・3人まで。個室なら15歳より下のお子様も会える",
+  "care": "退院後のおっぱい外来あり（はじめて2,000円、2回目から1,000円）。南丹市の産後ケアは市のページで確認できませんでした",
+  "extra": [
+   "病院のページの目安：50万円くらい"
+  ],
+  "src": [
+   [
+    "出産なび 京都中部総合医療センター",
+    "https://birth-navi.mhlw.go.jp/facilities/10546?tab=delivery"
+   ],
+   [
+    "京都中部総合医療センター 入院",
+    "https://www.kyoto-chubumedc.or.jp/shinryou/kamoku/sanhujin/sanhujin-sp/hospitalization/"
+   ],
+   [
+    "京都中部総合医療センター よくあるご質問",
+    "https://www.kyoto-chubumedc.or.jp/shinryou/kamoku/sanhujin/sanhujin-sp/question/"
+   ],
+   [
+    "京都中部総合医療センター 面会",
+    "https://www.kyoto-chubumedc.or.jp/nyuin/calling/"
+   ]
+  ]
+ }
+]

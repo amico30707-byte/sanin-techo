@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sanin-techo.jp/sitemap.xml

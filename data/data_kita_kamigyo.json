@@ -1,0 +1,130 @@
+[
+ {
+  "id": "daini-sekijuji",
+  "ward": "上京区",
+  "name": "京都第二赤十字病院",
+  "type": "大きな病院（NICUあり）",
+  "total": {
+   "avg": 580000,
+   "med": 583000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 0,
+   "text": "ふつうのお産では、個室を追加料金なしで使える（帝王切開のときは1日13,000〜14,000円）。4人部屋もえらべる"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "無痛分娩はしていません。かわりに痛みをやわらげる注射（和痛分娩・約20,000円）あり"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "入院中に1回あり（お肉かお魚をえらべる）。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（ふつうのお産のとき・ご家族1人まで。お子様は立ち会えません）",
+  "family": "病院全体のきまりでは、面会は15〜19時、中学生以上",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [
+   "病院のページの目安（2023年9月）：ふつうのお産で520,000円から",
+   "駐車場なし"
+  ],
+  "src": [
+   [
+    "出産なび 京都第二赤十字病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10769?tab=delivery"
+   ],
+   [
+    "京都第二赤十字病院 出産について",
+    "https://www.kyoto2.jrc.or.jp/department/obsterics/maternity/childbirth/"
+   ],
+   [
+    "京都第二赤十字病院 入院生活",
+    "https://www.kyoto2.jrc.or.jp/department/obsterics/maternity/hospitalized/"
+   ]
+  ]
+ },
+ {
+  "id": "furitsu",
+  "ward": "上京区",
+  "name": "京都府立医科大学附属病院",
+  "type": "大学病院（NICUあり）",
+  "total": {
+   "avg": 711000,
+   "med": 726000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。産婦人科のページ（日付不明）にはA個室1日26,420円・B個室8,450円とあるため、いまの金額は確認が必要"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "お母様の希望ではできません（医学的に必要なときのみ）"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "出産なびでは、できる（ふつうのお産のとき・1人まで）。病院のページに古い書き方がのこっているため、病院に確認を",
+  "family": "面会は制限あり（病院全体では14〜17時・2人まで）。赤ちゃんとは別のお部屋（母子別室）",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 京都府立医科大学附属病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10714?tab=delivery"
+   ],
+   [
+    "府立医大 産婦人科 周産期",
+    "https://obgy-kpum.com/perinatal-period/"
+   ]
+  ]
+ },
+ {
+  "id": "tsugumi",
+  "ward": "北区",
+  "name": "つぐみ助産院",
+  "type": "助産所（自宅出産も）",
+  "total": null,
+  "days": 5,
+  "room": {
+   "perDay": 0,
+   "text": "個室。お部屋代はお産の料金（5日入院）にふくまれています"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "食事はお産の料金にふくまれています。お祝い膳は公開されていません"
+  },
+  "tachiai": "できる（人数・間柄の制限なし）",
+  "family": "ご家族みんなで健診に来られる",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り）。大人の食事は朝1,000円・昼2,000円・夜2,000円",
+  "extra": [
+   "ホームページでは、入院のお産は550,000〜600,000円（5日・食事などこみ）、自宅のお産は500,000〜550,000円",
+   "出産なびには、費用のデータがまだありません"
+  ],
+  "src": [
+   [
+    "出産なび つぐみ助産院",
+    "https://birth-navi.mhlw.go.jp/facilities/11846?tab=delivery"
+   ],
+   [
+    "つぐみ助産院 料金",
+    "https://tsugumi-midwife.com/service/"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ }
+]

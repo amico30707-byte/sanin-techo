@@ -1,0 +1,420 @@
+[
+ {
+  "id": "saiseikai",
+  "ward": "長岡京市",
+  "name": "京都済生会病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 616000,
+   "med": 597000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 0,
+   "text": "全室個室。お産の日をふくめて6日間は個室代なし。LDRは1日16,500円、特別室は1日22,000円"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望で和痛分娩（硬膜外麻酔）ができる（日にちを決めて行う）。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝い膳あり（お肉かお魚をえらべる）。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（夫やパートナー、または大人のご家族1人）",
+  "family": "面会は制限あり（30分まで）。赤ちゃんとは窓ごしに面会",
+  "care": "長岡京市・向日市の産後ケア（泊まり・日帰り）の施設",
+  "extra": [
+   "病院のページの目安：6日入院で514,100円（2026年6月から）。くわしくは病院に確認を"
+  ],
+  "src": [
+   [
+    "出産なび 京都済生会病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10705?tab=delivery"
+   ],
+   [
+    "京都済生会病院 当院での出産",
+    "https://www.kyoto.saiseikai.or.jp/childbirth/index.html"
+   ],
+   [
+    "長岡京市 産後ケア事業",
+    "https://www.city.nagaokakyo.lg.jp/0000011065.html"
+   ],
+   [
+    "向日市 産後ケア",
+    "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ]
+  ]
+ },
+ {
+  "id": "kondo",
+  "ward": "長岡京市",
+  "name": "近藤産婦人科医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 505000,
+   "med": 495000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 0,
+   "text": "個室が14室あり。お部屋代はお産の料金にふくまれています"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません（自然なお産が基本）"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝い膳は、同じころにお産をしたお母様といっしょに食べる。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる",
+  "family": "お部屋での面会は17時半〜20時、大人2人までとごきょうだい",
+  "care": "長岡京市・向日市の産後ケア（泊まり）の施設",
+  "extra": [
+   "ホームページの目安：はじめてのお産で512,000円から（入院日数はページ内で書き方がちがうため確認を）"
+  ],
+  "src": [
+   [
+    "出産なび 近藤産婦人科医院",
+    "https://birth-navi.mhlw.go.jp/facilities/11256?tab=delivery"
+   ],
+   [
+    "近藤産婦人科医院 入院のご案内",
+    "https://www.kondo-sanfujinka.com/hospitalization/"
+   ],
+   [
+    "近藤産婦人科医院 産後ケア",
+    "https://www.kondo-sanfujinka.com/care/"
+   ],
+   [
+    "向日市 産後ケア",
+    "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ]
+  ]
+ },
+ {
+  "id": "hashii",
+  "ward": "向日市",
+  "name": "ハシイ産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 585000,
+   "med": 574000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "希望でできる（35週ごろに無痛外来）。費用は画像でのみ案内されていて、まだ確認できていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "面会は制限あり",
+  "care": "長岡京市・向日市の産後ケア（泊まり・日帰り）の施設",
+  "extra": [],
+  "src": [
+   [
+    "出産なび ハシイ産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/11296?tab=delivery"
+   ],
+   [
+    "ハシイ産婦人科 無痛分娩",
+    "https://hashii-hp.jp/painless/"
+   ],
+   [
+    "向日市 産後ケア",
+    "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ]
+  ]
+ },
+ {
+  "id": "musubi",
+  "ward": "向日市",
+  "name": "musubi助産院",
+  "type": "助産所",
+  "total": {
+   "avg": 561000,
+   "med": 568000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（人数・間柄の制限なし）",
+  "family": "面会できる。パートナーのお泊まりは1泊1,000円",
+  "care": "長岡京市・向日市の産後ケア（泊まり・日帰り・訪問）の施設",
+  "extra": [],
+  "src": [
+   [
+    "出産なび musubi助産院",
+    "https://birth-navi.mhlw.go.jp/facilities/11712?tab=delivery"
+   ],
+   [
+    "musubi助産院",
+    "https://mw-musubi.studio.site/"
+   ],
+   [
+    "向日市 産後ケア",
+    "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ]
+  ]
+ },
+ {
+  "id": "osamura",
+  "ward": "八幡市",
+  "name": "おさむら産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 571000,
+   "med": 577000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 7500,
+   "text": "個室は1泊7,500円"
+  },
+  "painless": {
+   "ok": true,
+   "cost": null,
+   "text": "2026年5月に始まったばかり。いまは2人目以降のお母様の計画無痛分娩のみ。費用は公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "産後3日目にお祝い膳あり（お肉かお魚）。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（人数の制限なし・夫やパートナー、お子様、お母様のお母様）",
+  "family": "面会は13時〜20時。赤ちゃんとは別のお部屋が基本（希望で同室も）",
+  "care": "退院後10〜14日ごろに無料の産後ケア外来あり",
+  "extra": [
+   "お産の予約の数に限りあり"
+  ],
+  "src": [
+   [
+    "出産なび おさむら産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/11281?tab=delivery"
+   ],
+   [
+    "おさむら産婦人科 ホームページ",
+    "https://www.osamura-og.jp/"
+   ],
+   [
+    "おさむら産婦人科 入院案内",
+    "https://www.osamura-og.jp/after/"
+   ]
+  ]
+ },
+ {
+  "id": "ide",
+  "ward": "京田辺市",
+  "name": "井出産婦人科",
+  "type": "産婦人科クリニック",
+  "total": null,
+  "days": null,
+  "room": {
+   "perDay": null,
+   "text": "まだ確認できていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "まだ確認できていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "まだ確認できていません"
+  },
+  "tachiai": "まだ確認できていません",
+  "family": "まだ確認できていません",
+  "care": "まだ確認できていません",
+  "extra": [
+   "出産なびの費用のページが開けず、くわしい情報はまだ確認できていません"
+  ],
+  "src": [
+   [
+    "出産なび 井出産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/10977"
+   ]
+  ]
+ },
+ {
+  "id": "yamashiro",
+  "ward": "木津川市",
+  "name": "京都山城総合医療センター",
+  "type": "大きな病院",
+  "total": {
+   "avg": 553000,
+   "med": 552000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 8800,
+   "text": "個室は1日8,000円（税別・木津川市、笠置町、和束町、南山城村にお住まいの方）。ほかの方は10,000円（税別）"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません（自然なお産が基本）"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "入院中に1回お祝い膳あり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー、ご両親、ごきょうだい）",
+  "family": "面会は3人まで",
+  "care": "木津川市・精華町・和束町の産後ケア（泊まり・日帰り、4か月まで）の施設",
+  "extra": [
+   "病院のページの目安：大部屋で52万円ほど、個室で58万円ほど"
+  ],
+  "src": [
+   [
+    "出産なび 京都山城総合医療センター",
+    "https://birth-navi.mhlw.go.jp/facilities/10431?tab=delivery"
+   ],
+   [
+    "京都山城総合医療センター 産婦人科 費用",
+    "https://yamashiro-sanka.com/cost.html"
+   ],
+   [
+    "京都山城総合医療センター 入院生活",
+    "https://yamashiro-sanka.com/hospital_life.html"
+   ],
+   [
+    "木津川市 産後ケア",
+    "https://www.city.kizugawa.lg.jp/kosodate/0000001203.html"
+   ],
+   [
+    "精華町 産後ケア",
+    "https://www.town.seika.kyoto.jp/shinseisho/kenkoiryo/12426.html"
+   ],
+   [
+    "和束町 産後ケア",
+    "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1529.html"
+   ]
+  ]
+ },
+ {
+  "id": "shinkai",
+  "ward": "木津川市",
+  "name": "助産院しんかい",
+  "type": "助産所",
+  "total": {
+   "avg": 500000,
+   "med": null
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "木津川市・精華町・和束町の産後ケア（泊まり・日帰り、1歳まで）の施設",
+  "extra": [
+   "入院日数は出産なびの平均"
+  ],
+  "src": [
+   [
+    "出産なび 助産院しんかい",
+    "https://birth-navi.mhlw.go.jp/facilities/11945?tab=delivery"
+   ],
+   [
+    "木津川市 産後ケア",
+    "https://www.city.kizugawa.lg.jp/kosodate/0000001203.html"
+   ],
+   [
+    "精華町 産後ケア",
+    "https://www.town.seika.kyoto.jp/shinseisho/kenkoiryo/12426.html"
+   ],
+   [
+    "和束町 産後ケア",
+    "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1529.html"
+   ]
+  ]
+ },
+ {
+  "id": "yuiku",
+  "ward": "精華町",
+  "name": "悠育助産院",
+  "type": "助産所",
+  "total": {
+   "avg": 556000,
+   "med": null
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": false,
+   "cost": null,
+   "text": "助産所のため、麻酔をつかう無痛分娩はしていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（人数の制限なし・夫やパートナー、お子様）",
+  "family": "面会は制限あり（お子様、ごきょうだい）",
+  "care": "木津川市・精華町・和束町の産後ケア（泊まり・日帰り、1歳まで）の施設",
+  "extra": [
+   "入院日数は出産なびの平均"
+  ],
+  "src": [
+   [
+    "出産なび 悠育助産院",
+    "https://birth-navi.mhlw.go.jp/facilities/11838?tab=delivery"
+   ],
+   [
+    "木津川市 産後ケア",
+    "https://www.city.kizugawa.lg.jp/kosodate/0000001203.html"
+   ],
+   [
+    "精華町 産後ケア",
+    "https://www.town.seika.kyoto.jp/shinseisho/kenkoiryo/12426.html"
+   ],
+   [
+    "和束町 産後ケア",
+    "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1529.html"
+   ]
+  ]
+ }
+]

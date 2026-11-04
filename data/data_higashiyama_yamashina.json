@@ -1,0 +1,105 @@
+[
+ {
+  "id": "daiichi-sekijuji",
+  "ward": "東山区",
+  "name": "京都第一赤十字病院",
+  "type": "大きな病院（NICUあり）",
+  "total": {
+   "avg": 516000,
+   "med": 515000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 12100,
+   "text": "個室は1日12,100円の追加"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 70000,
+   "text": "希望でできる（24時間ではない・日にちを決めて行う）。70,000円"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝い膳の写真あり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（1人まで・夫やパートナー、ご両親。34週以降の経腟分娩のみ）",
+  "family": "面会は14時〜19時、1日2人まで。上のお子様の面会は、ページによって書き方がちがうため確認が必要",
+  "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
+  "extra": [
+   "病院のページの目安：ふつうのお産（6日）で約52万円",
+   "母親学級などの教室は無料"
+  ],
+  "src": [
+   [
+    "出産なび 京都第一赤十字病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10511?tab=delivery"
+   ],
+   [
+    "京都第一赤十字病院 当院での出産",
+    "https://www.kyoto1.jrc.or.jp/division/obstetrics-gynecology/giving-birth"
+   ],
+   [
+    "京都第一赤十字病院 面会について",
+    "https://www.kyoto1.jrc.or.jp/for-patients/visitation"
+   ]
+  ]
+ },
+ {
+  "id": "otowa",
+  "ward": "山科区",
+  "name": "洛和会音羽病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 576000,
+   "med": 564000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 14300,
+   "text": "個室（トイレ・洗面台付き）は1日14,300円、シャワー付きは20,900円から。赤ちゃんと同じお部屋を希望すると、お産から6日間は1日1,100円で個室に入れる（空きがあれば）"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 100000,
+   "text": "いまは、2人目以降で帝王切開の経験がないお母様のみ（平日昼の計画分娩）。100,000円"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": 0,
+   "text": "お産のあと、ご家族の1食分「ファミリー食」を無料で用意"
+  },
+  "tachiai": "できる（3人まで・事前に教室の動画を見る）",
+  "family": "面会は制限あり。ご家族のお泊まりはできません",
+  "care": "京都市の産後ケアに参加（泊まり・日帰り、3か月未満）。大人の食事は1食780円（持ちこみもOK）",
+  "extra": [
+   "病院のページの目安：分娩費（6日）49万〜66万円（個室代は別）"
+  ],
+  "src": [
+   [
+    "出産なび 洛和会音羽病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10032?tab=delivery"
+   ],
+   [
+    "洛和会音羽病院 費用",
+    "https://www.rakuwa.or.jp/otowa/shinryoka/maternity/shusan/hiyou.html"
+   ],
+   [
+    "洛和会音羽病院 お部屋",
+    "https://www.rakuwa.or.jp/otowa/shinryoka/maternity/shusan/room.html"
+   ],
+   [
+    "洛和会音羽病院 無痛分娩",
+    "https://www.rakuwa.or.jp/otowa/shinryoka/maternity/shusan/mutsubunben.html"
+   ],
+   [
+    "洛和会音羽病院 お食事",
+    "https://www.rakuwa.or.jp/otowa/shinryoka/maternity/shusan/food.html"
+   ],
+   [
+    "京都市 スマイルママ・ホッと事業 施設一覧",
+    "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ]
+  ]
+ }
+]

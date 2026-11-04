@@ -1,0 +1,277 @@
+[
+ {
+  "id": "fukuchiyama-shimin",
+  "ward": "福知山市",
+  "name": "市立福知山市民病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 534000,
+   "med": 525000
+  },
+  "days": 6,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 100000,
+   "text": "希望でできる（24時間ではない・計画分娩）。100,000円"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（1人まで）",
+  "family": "面会は2人まで。中学生以下のお子様は面会できません",
+  "care": "出産なびに産後ケアありと記載（くわしい内容は病院に確認）",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 市立福知山市民病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10650?tab=delivery"
+   ],
+   [
+    "福知山市 産後ケアの案内",
+    "https://www.city.fukuchiyama.lg.jp/uploaded/attachment/51833.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "okamoto",
+  "ward": "福知山市",
+  "name": "岡本産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 477000,
+   "med": 480000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "出産なびに産後ケアありと記載",
+  "extra": [
+   "JR福知山駅から歩いて5分"
+  ],
+  "src": [
+   [
+    "出産なび 岡本産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/11432?tab=delivery"
+   ]
+  ]
+ },
+ {
+  "id": "maizuru-iryo",
+  "ward": "舞鶴市",
+  "name": "舞鶴医療センター",
+  "type": "大きな病院",
+  "total": {
+   "avg": 540000,
+   "med": 540000
+  },
+  "days": 7,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。お部屋ごとに料金がちがうため病院に確認。陣痛からお産まで同じお部屋（LDR）は5,000円（税別）の追加"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（大人2人まで。お子様をふくめたご家族での立ち会いもできる）",
+  "family": "面会は2人まで、お子様は小学生から（LDRなら年齢に関係なく1人まで）",
+  "care": "出産なびに産後ケアありと記載",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 舞鶴医療センター",
+    "https://birth-navi.mhlw.go.jp/facilities/10423?tab=delivery"
+   ]
+  ]
+ },
+ {
+  "id": "katayama",
+  "ward": "舞鶴市",
+  "name": "片山産婦人科",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 587000,
+   "med": 584000
+  },
+  "days": 8,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "出産なびに産後ケアありと記載",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 片山産婦人科",
+    "https://birth-navi.mhlw.go.jp/facilities/11464?tab=delivery"
+   ]
+  ]
+ },
+ {
+  "id": "yura",
+  "ward": "綾部市",
+  "name": "由良産婦人科・小児科医院",
+  "type": "産婦人科クリニック",
+  "total": {
+   "avg": 481000,
+   "med": 480000
+  },
+  "days": 5,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お産のあとのお祝い料理として、和食コースと毎週のイタリアンコースあり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（希望を病院に伝える）",
+  "family": "お食事はダイニングルームでもとれる。付きそいの方の食事もたのめる",
+  "care": "出産なびに産後ケアありと記載。赤ちゃんといっしょのお部屋（母子同室）が基本",
+  "extra": [
+   "小児科もある"
+  ],
+  "src": [
+   [
+    "出産なび 由良産婦人科・小児科医院",
+    "https://birth-navi.mhlw.go.jp/facilities/11389?tab=delivery"
+   ],
+   [
+    "由良産婦人科 お産について",
+    "https://www.yuraladies.com/osan.html"
+   ],
+   [
+    "由良産婦人科 サービス",
+    "https://www.yuraladies.com/service.html"
+   ]
+  ]
+ },
+ {
+  "id": "hokubu-iryo",
+  "ward": "与謝野町",
+  "name": "京都府立医科大学附属 北部医療センター",
+  "type": "大学病院",
+  "total": {
+   "avg": 570000,
+   "med": 560000
+  },
+  "days": 7,
+  "room": {
+   "perDay": null,
+   "text": "個室あり。差額は公開されていません"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる",
+  "family": "公開されていません",
+  "care": "出産なびに産後ケアありと記載。京丹後市の泊まりの産後ケア（自己負担0円）もここで使える",
+  "extra": [
+   "陣痛からお産まで同じお部屋（LDR）が基本"
+  ],
+  "src": [
+   [
+    "出産なび 北部医療センター",
+    "https://birth-navi.mhlw.go.jp/facilities/10286?tab=delivery"
+   ],
+   [
+    "北部医療センター 産婦人科",
+    "https://nmc.kpu-m.ac.jp/doc/sinryouka/sanhujinka.html"
+   ],
+   [
+    "京丹後市 産後ケア事業",
+    "https://www.city.kyotango.lg.jp/material/files/group/25/sangokeajigyou6.pdf"
+   ]
+  ]
+ },
+ {
+  "id": "yasaka",
+  "ward": "京丹後市",
+  "name": "京丹後市立弥栄病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 460000,
+   "med": 466000
+  },
+  "days": 7,
+  "room": {
+   "perDay": 2500,
+   "text": "個室は1日2,500円（京丹後市にお住まいの方）、市外の方は3,250円"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（2人まで・夫やパートナー、お子様、ご両親）",
+  "family": "面会は2人まで（夫やパートナー、お子様、ご両親）",
+  "care": "京丹後市の産後ケアに参加（泊まり・7泊まで）。京丹後市の方は自己負担0円",
+  "extra": [],
+  "src": [
+   [
+    "出産なび 京丹後市立弥栄病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10479?tab=delivery"
+   ],
+   [
+    "京丹後市 産後ケア事業",
+    "https://www.city.kyotango.lg.jp/material/files/group/25/sangokeajigyou6.pdf"
+   ]
+  ]
+ }
+]
