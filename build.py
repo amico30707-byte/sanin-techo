@@ -658,6 +658,7 @@ def build(preview=False):
     if not preview:
         open(f"{out}/CNAME","w").write("sanin-techo.jp\n")
         open(f"{out}/.nojekyll","w").write("")
+        open(f"{out}/google398b3a66555b760f.html","w").write("google-site-verification: google398b3a66555b760f.html")
     for fname,(title,desc,body,nav,crumbs) in pages.items():
         open(f"{out}/{fname}","w").write(page(fname,title,desc,body,nav,crumbs,preview=(preview and fname=="index.html")))
     if not preview:
