@@ -10,8 +10,8 @@
   },
   "days": 6,
   "room": {
-   "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "perDay": 5500,
+   "text": "産科の一般個室Aは5,500円（税込）。陣痛からお産まで同じお部屋（LDR）は11,000円、特別個室は16,500円"
   },
   "painless": {
    "ok": true,
@@ -35,6 +35,10 @@
    [
     "福知山市 産後ケアの案内",
     "https://www.city.fukuchiyama.lg.jp/uploaded/attachment/51833.pdf"
+   ],
+   [
+    "市立福知山市民病院 有料個室",
+    "https://www.city.fukuchiyama.lg.jp/site/hosp/2962.html"
    ]
   ]
  },
@@ -122,7 +126,7 @@
   "days": 8,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "個室・4人部屋あり。差額は公開されていません"
   },
   "painless": {
    "ok": null,
@@ -142,6 +146,10 @@
    [
     "出産なび 片山産婦人科",
     "https://birth-navi.mhlw.go.jp/facilities/11464?tab=delivery"
+   ],
+   [
+    "片山産婦人科 写真",
+    "https://katayama-angel.net/photo"
    ]
   ]
  },
@@ -157,7 +165,7 @@
   "days": 5,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "和室が中心（洋室も相談できる）。お部屋にご家族用の布団あり。差額は公開されていません"
   },
   "painless": {
    "ok": null,
@@ -187,6 +195,10 @@
    [
     "由良産婦人科 サービス",
     "https://www.yuraladies.com/service.html"
+   ],
+   [
+    "由良産婦人科 施設",
+    "https://www.yuraladies.com/facility.html"
    ]
   ]
  },
@@ -202,7 +214,7 @@
   "days": 7,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "病院の個室料は1日3,480円か4,650円、特別室は13,950円。産科のお部屋がどれにあたるかは書かれていません"
   },
   "painless": {
    "ok": null,
@@ -232,6 +244,10 @@
    [
     "京丹後市 産後ケア事業",
     "https://www.city.kyotango.lg.jp/material/files/group/25/sangokeajigyou6.pdf"
+   ],
+   [
+    "北部医療センター 入院のご案内",
+    "https://nmc.kpu-m.ac.jp/doc/kanja/nyuuin.html"
    ]
   ]
  },

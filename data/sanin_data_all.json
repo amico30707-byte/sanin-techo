@@ -1663,9 +1663,9 @@
    "text": "無痛分娩はしていません。痛みをやわらげるお薬をつかう和痛分娩あり"
   },
   "oiwai": {
-   "ok": null,
+   "ok": true,
    "cost": null,
-   "text": "公開されていません（15時におやつあり）"
+   "text": "お祝い膳あり（病院のブログより）。追加料金かどうかは書かれていません"
   },
   "tachiai": "できる（夫やパートナー1人のみ。帝王切開のときはできません）",
   "family": "面会は2人まで（14〜15時・一部の曜日は20〜21時）。中学生までのお子様の面会はひかえるようお願いあり",
@@ -1693,6 +1693,10 @@
    [
     "亀岡市 産後ケア料金表（令和8年度）",
     "https://www.city.kameoka.kyoto.jp/uploaded/attachment/46968.pdf"
+   ],
+   [
+    "田村産婦人科医院 ブログ",
+    "https://tamura-hp.com/blog/"
    ]
   ]
  },
@@ -1708,7 +1712,7 @@
   "days": 5,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "特別室（洗面・トイレ・シャワー付き）、個室（ソファー付き・シャワー付き・一般）、4人部屋、和室あり。差額は公開されていません"
   },
   "painless": {
    "ok": null,
@@ -1723,7 +1727,11 @@
   "tachiai": "できる",
   "family": "公開されていません",
   "care": "亀岡市の産後ケアに参加（泊まり）。食事は朝1,000円・昼2,000円・夜3,000円。お部屋代は個室なら1泊目10,000円、大部屋なら4,000円（2泊目は0円）",
-  "extra": [],
+  "extra": [
+   "赤ちゃんといっしょのお部屋（母子同室）",
+   "JR嵯峨野線の馬堀駅から歩いて1分。駐車場あり",
+   "週3回、夕食がスペシャルメニュー（和食・イタリアン・フレンチなど）"
+  ],
   "src": [
    [
     "出産なび 山口マタニティクリニック",
@@ -1732,6 +1740,14 @@
    [
     "亀岡市 産後ケア料金表（令和8年度）",
     "https://www.city.kameoka.kyoto.jp/uploaded/attachment/46968.pdf"
+   ],
+   [
+    "山口マタニティクリニック 施設",
+    "http://www.yamaguchi-mc.jp/yamaguchi_shisestu.html"
+   ],
+   [
+    "山口マタニティクリニック 食事",
+    "http://www.yamaguchi-mc.jp/yamaguchi_meal.html"
    ]
   ]
  },
@@ -1795,8 +1811,8 @@
   },
   "days": 6,
   "room": {
-   "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "perDay": 5500,
+   "text": "産科の一般個室Aは5,500円（税込）。陣痛からお産まで同じお部屋（LDR）は11,000円、特別個室は16,500円"
   },
   "painless": {
    "ok": true,
@@ -1820,6 +1836,10 @@
    [
     "福知山市 産後ケアの案内",
     "https://www.city.fukuchiyama.lg.jp/uploaded/attachment/51833.pdf"
+   ],
+   [
+    "市立福知山市民病院 有料個室",
+    "https://www.city.fukuchiyama.lg.jp/site/hosp/2962.html"
    ]
   ]
  },
@@ -1907,7 +1927,7 @@
   "days": 8,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "個室・4人部屋あり。差額は公開されていません"
   },
   "painless": {
    "ok": null,
@@ -1927,6 +1947,10 @@
    [
     "出産なび 片山産婦人科",
     "https://birth-navi.mhlw.go.jp/facilities/11464?tab=delivery"
+   ],
+   [
+    "片山産婦人科 写真",
+    "https://katayama-angel.net/photo"
    ]
   ]
  },
@@ -1942,7 +1966,7 @@
   "days": 5,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "和室が中心（洋室も相談できる）。お部屋にご家族用の布団あり。差額は公開されていません"
   },
   "painless": {
    "ok": null,
@@ -1972,6 +1996,10 @@
    [
     "由良産婦人科 サービス",
     "https://www.yuraladies.com/service.html"
+   ],
+   [
+    "由良産婦人科 施設",
+    "https://www.yuraladies.com/facility.html"
    ]
   ]
  },
@@ -2026,7 +2054,7 @@
   "days": 7,
   "room": {
    "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "text": "病院の個室料は1日3,480円か4,650円、特別室は13,950円。産科のお部屋がどれにあたるかは書かれていません"
   },
   "painless": {
    "ok": null,
@@ -2056,6 +2084,10 @@
    [
     "京丹後市 産後ケア事業",
     "https://www.city.kyotango.lg.jp/material/files/group/25/sangokeajigyou6.pdf"
+   ],
+   [
+    "北部医療センター 入院のご案内",
+    "https://nmc.kpu-m.ac.jp/doc/kanja/nyuuin.html"
    ]
   ]
  }
