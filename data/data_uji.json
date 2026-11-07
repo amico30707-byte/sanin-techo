@@ -1,20 +1,88 @@
 [
-{"id":"uji-tokushukai","ward":"宇治市","name":"宇治徳洲会病院","type":"大きな病院","total":{"avg":454000,"med":452000},"days":6,
- "room":{"perDay":null,"text":"病院のページの目安（はじめてのお産で約47万円から）は「個室代込み」。出産なびでは差額は公開されていません"},
- "painless":{"ok":null,"cost":null,"text":"公開されていません"},
- "oiwai":{"ok":true,"cost":null,"text":"お祝いのお食事とケーキのビュッフェあり。追加料金かどうかは書かれていません"},
- "tachiai":"できる（基本は大人1人・お子様は入れません）",
- "family":"公開されていません",
- "care":"宇治市の産後ケアの施設一覧には入っていません。助産師外来で、退院後の授乳などの相談ができる",
- "extra":["陣痛からお産まで同じお部屋（LDR）"],
- "src":[["出産なび 宇治徳洲会病院","https://birth-navi.mhlw.go.jp/facilities/10448?tab=delivery"],["宇治徳洲会病院 当院でご出産をお考えの方へ","https://www.ujitoku.or.jp/childbirth/"],["宇治市 産後ケアサービス","https://www.city.uji.kyoto.jp/site/kosodate/7151.html"]]},
-{"id":"tokura","ward":"宇治市","name":"都倉病院","type":"産婦人科の病院","total":{"avg":519000,"med":490000},"days":5,
- "room":{"perDay":8800,"text":"個室は1日8,000円（税別）、おふろ・トイレ付きは12,000円（税別）"},
- "painless":{"ok":true,"cost":90000,"text":"希望でできる（24時間・自然に陣痛がきてから）。90,000円"},
- "oiwai":{"ok":null,"cost":null,"text":"公開されていません"},
- "tachiai":"できる（2人まで・夫やパートナー、ご両親、ごきょうだい）",
- "family":"面会は4人まで",
- "care":"宇治市の産後ケア（泊まり）の施設",
- "extra":["京阪宇治駅から歩いて7分"],
- "src":[["出産なび 都倉病院","https://birth-navi.mhlw.go.jp/facilities/10742?tab=delivery"],["宇治市 産後ケアサービス","https://www.city.uji.kyoto.jp/site/kosodate/7151.html"]]}
+ {
+  "id": "uji-tokushukai",
+  "ward": "宇治市",
+  "name": "宇治徳洲会病院",
+  "type": "大きな病院",
+  "total": {
+   "avg": 454000,
+   "med": 452000
+  },
+  "days": 6,
+  "room": {
+   "perDay": 0,
+   "text": "病院の費用の目安（はじめてのお産で約47万円から・税込）に個室代がふくまれています"
+  },
+  "painless": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "oiwai": {
+   "ok": true,
+   "cost": null,
+   "text": "お祝いのお食事とケーキのビュッフェあり。追加料金かどうかは書かれていません"
+  },
+  "tachiai": "できる（基本は大人1人・お子様は入れません）",
+  "family": "公開されていません",
+  "care": "宇治市の産後ケアの施設一覧には入っていません。助産師外来で、退院後の授乳などの相談ができる",
+  "extra": [
+   "陣痛からお産まで同じお部屋（LDR）"
+  ],
+  "src": [
+   [
+    "出産なび 宇治徳洲会病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10448?tab=delivery"
+   ],
+   [
+    "宇治徳洲会病院 当院でご出産をお考えの方へ",
+    "https://www.ujitoku.or.jp/childbirth/"
+   ],
+   [
+    "宇治市 産後ケアサービス",
+    "https://www.city.uji.kyoto.jp/site/kosodate/7151.html"
+   ]
+  ]
+ },
+ {
+  "id": "tokura",
+  "ward": "宇治市",
+  "name": "都倉病院",
+  "type": "産婦人科の病院",
+  "total": {
+   "avg": 519000,
+   "med": 490000
+  },
+  "days": 5,
+  "room": {
+   "perDay": 8800,
+   "text": "個室は1日8,000円（税別）、おふろ・トイレ付きは12,000円（税別）"
+  },
+  "painless": {
+   "ok": true,
+   "cost": 90000,
+   "text": "希望でできる（24時間・自然に陣痛がきてから）。90,000円"
+  },
+  "oiwai": {
+   "ok": null,
+   "cost": null,
+   "text": "公開されていません"
+  },
+  "tachiai": "できる（2人まで・夫やパートナー、ご両親、ごきょうだい）",
+  "family": "面会は4人まで",
+  "care": "宇治市の産後ケア（泊まり）の施設",
+  "extra": [
+   "京阪宇治駅から歩いて7分"
+  ],
+  "src": [
+   [
+    "出産なび 都倉病院",
+    "https://birth-navi.mhlw.go.jp/facilities/10742?tab=delivery"
+   ],
+   [
+    "宇治市 産後ケアサービス",
+    "https://www.city.uji.kyoto.jp/site/kosodate/7151.html"
+   ]
+  ]
+ }
 ]

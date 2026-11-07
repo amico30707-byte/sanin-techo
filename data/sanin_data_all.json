@@ -18,7 +18,7 @@
   "oiwai": {
    "ok": null,
    "cost": null,
-   "text": "食事はお産の料金にふくまれています。お祝い膳は公開されていません"
+   "text": "お食事はお産の料金にふくまれています（料金はすべて税込）。お祝い膳は公開されていません"
   },
   "tachiai": "できる（人数・間柄の制限なし）",
   "family": "ご家族みんなで健診に来られる",
@@ -320,17 +320,17 @@
   "days": 7,
   "room": {
    "perDay": null,
-   "text": "個室はあり。差額は公開されていません"
+   "text": "原則は個室（満床のときは大部屋になることも）。差額は公開されていません"
   },
   "painless": {
-   "ok": null,
+   "ok": true,
    "cost": null,
-   "text": "2人目以降のお母様は、計画分娩での無痛分娩もできる（34週ごろまでに申し出）。費用は公開されていません"
+   "text": "2024年度から無痛分娩を始めています（お母様の体の状態によってえらべる）。2人目以降のお母様は計画分娩もできる（34週ごろまでに申し出）。費用は公開されていません"
   },
   "oiwai": {
-   "ok": false,
+   "ok": true,
    "cost": null,
-   "text": "豪華なお食事はないと案内されています"
+   "text": "生まれて3日目の夜にお祝い膳あり。追加料金かどうかは書かれていません"
   },
   "tachiai": "できる",
   "family": "公開されていません",
@@ -348,6 +348,14 @@
    [
     "京都市 スマイルママ・ホッと事業 施設一覧（令和8年8月）",
     "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/shisetuichirann.pdf"
+   ],
+   [
+    "京都市立病院 入院について",
+    "https://www.kch-org.jp/%E5%BD%93%E9%99%A2%E3%81%A7%E5%87%BA%E7%94%A3%E3%82%92%E3%81%8A%E8%80%83%E3%81%88%E3%81%AE%E6%96%B9%E3%81%B8/%E5%85%A5%E9%99%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+   ],
+   [
+    "京都市立病院 産婦人科",
+    "https://www.kch-org.jp/outline/section/sanfujinka"
    ]
   ]
  },
@@ -366,9 +374,9 @@
    "text": "個室・家族室・特別室からえらぶ。料金は公開されていません"
   },
   "painless": {
-   "ok": null,
+   "ok": false,
    "cost": null,
-   "text": "公開されていません"
+   "text": "無痛分娩はしていません（病院のよくある質問より）"
   },
   "oiwai": {
    "ok": true,
@@ -390,6 +398,10 @@
    [
     "山元病院 入院のご案内",
     "https://www.yamamoto-hospital.gr.jp/guidance/"
+   ],
+   [
+    "山元病院 よくある質問",
+    "https://www.yamamoto-hospital.gr.jp/contact/"
    ]
   ]
  },
@@ -612,7 +624,8 @@
   "family": "面会は10時〜19時",
   "care": "京都市の産後ケアの一覧には入っていません（出産なびには産後ケアありと記載）",
   "extra": [
-   "2026年12月下旬までのお産の予約は締め切り（ホームページ）"
+   "2026年12月下旬までのお産の予約は締め切り（ホームページ）",
+   "2026年12月下旬までのお産の予約は、しめ切りと案内されています（2026年11月時点）"
   ],
   "src": [
    [
@@ -622,6 +635,10 @@
    [
     "細田クリニック ご案内",
     "https://hosodaclinic.jp/guide/"
+   ],
+   [
+    "細田クリニック 医院案内",
+    "https://hosodaclinic.jp/clinicinfo/"
    ]
   ]
  },
@@ -731,8 +748,8 @@
   },
   "painless": {
    "ok": true,
-   "cost": null,
-   "text": "希望でできる（24時間・計画分娩）。費用は公開されていません"
+   "cost": 130000,
+   "text": "希望でできる（計画分娩）。平均13〜15万円ほど（かかった時間や薬の量でかわる）"
   },
   "oiwai": {
    "ok": null,
@@ -758,6 +775,10 @@
    [
     "京都市 スマイルママ・ホッと事業 施設一覧（令和8年8月）",
     "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/shisetuichirann.pdf"
+   ],
+   [
+    "身原病院 無痛分娩",
+    "https://mihara.com/obstetrics/bunben_howto/mutsu/"
    ]
   ]
  },
@@ -813,18 +834,18 @@
   },
   "days": 6,
   "room": {
-   "perDay": 13200,
-   "text": "個室は1日13,200円の追加"
+   "perDay": 16500,
+   "text": "一般個室は1日16,500円（2026年9月から。それまでは13,200円）、特別個室は28,600円"
   },
   "painless": {
    "ok": true,
-   "cost": null,
-   "text": "希望でできる（24時間ではない・計画分娩）。費用は公開されていません"
+   "cost": 100000,
+   "text": "希望でできる（計画分娩・平日の日中のみ）。100,000円（2026年4月時点）"
   },
   "oiwai": {
    "ok": null,
    "cost": null,
-   "text": "公開されていません"
+   "text": "お祝い膳は公開されていません（お祝いのプレゼントあり）"
   },
   "tachiai": "できる（1人まで）",
   "family": "面会は2人まで。赤ちゃんとは別のお部屋（母子別室）",
@@ -840,6 +861,14 @@
    [
     "京都市 スマイルママ・ホッと事業 施設一覧（令和8年8月）",
     "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/shisetuichirann.pdf"
+   ],
+   [
+    "京都桂病院 妊婦健診・分娩費用",
+    "https://www.katsura.com/sanfujinka/medical_checkup.html"
+   ],
+   [
+    "京都桂病院 無痛分娩",
+    "https://www.katsura.com/sanfujinka/labor_analgesia.html"
    ]
   ]
  },
@@ -1004,12 +1033,12 @@
   "painless": {
    "ok": null,
    "cost": null,
-   "text": "公開されていません"
+   "text": "公開されていません（自然分娩が基本の方針）"
   },
   "oiwai": {
    "ok": true,
    "cost": null,
-   "text": "お祝いの夜に洋食のコースあり。追加料金かどうかは書かれていません"
+   "text": "お祝いの夕食に、ステーキがメインの洋食フルコースあり。追加料金かどうかは書かれていません"
   },
   "tachiai": "できる",
   "family": "公開されていません",
@@ -1029,6 +1058,10 @@
    [
     "京都市 スマイルママ・ホッと事業 施設一覧（令和8年8月）",
     "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/shisetuichirann.pdf"
+   ],
+   [
+    "藤田産科・婦人科医院 診療",
+    "https://fujita-ladies.jp/medical/"
    ]
   ]
  },
@@ -1211,8 +1244,8 @@
   },
   "days": 5,
   "room": {
-   "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "perDay": 5000,
+   "text": "トイレ付きの個室は1日5,000円（普通分娩の費用は5日間で50万円から）"
   },
   "painless": {
    "ok": true,
@@ -1240,6 +1273,10 @@
    [
     "向日市 産後ケア",
     "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ],
+   [
+    "ハシイ産婦人科 費用",
+    "https://hashii-hp.jp/course/course13/"
    ]
   ]
  },
@@ -1297,8 +1334,8 @@
   },
   "days": 6,
   "room": {
-   "perDay": null,
-   "text": "病院のページの目安（はじめてのお産で約47万円から）は「個室代込み」。出産なびでは差額は公開されていません"
+   "perDay": 0,
+   "text": "病院の費用の目安（はじめてのお産で約47万円から・税込）に個室代がふくまれています"
   },
   "painless": {
    "ok": null,

@@ -108,8 +108,8 @@
   },
   "days": 5,
   "room": {
-   "perDay": null,
-   "text": "個室あり。差額は公開されていません"
+   "perDay": 5000,
+   "text": "トイレ付きの個室は1日5,000円（普通分娩の費用は5日間で50万円から）"
   },
   "painless": {
    "ok": true,
@@ -137,6 +137,10 @@
    [
     "向日市 産後ケア",
     "https://www.city.muko.kyoto.jp/site/shinsei/3228.html"
+   ],
+   [
+    "ハシイ産婦人科 費用",
+    "https://hashii-hp.jp/course/course13/"
    ]
   ]
  },

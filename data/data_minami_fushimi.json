@@ -248,12 +248,12 @@
   "painless": {
    "ok": null,
    "cost": null,
-   "text": "公開されていません"
+   "text": "公開されていません（自然分娩が基本の方針）"
   },
   "oiwai": {
    "ok": true,
    "cost": null,
-   "text": "お祝いの夜に洋食のコースあり。追加料金かどうかは書かれていません"
+   "text": "お祝いの夕食に、ステーキがメインの洋食フルコースあり。追加料金かどうかは書かれていません"
   },
   "tachiai": "できる",
   "family": "公開されていません",
@@ -273,6 +273,10 @@
    [
     "京都市 スマイルママ・ホッと事業 施設一覧",
     "https://www.city.kyoto.lg.jp/hagukumi/cmsfiles/contents/0000168/168986/080301.pdf"
+   ],
+   [
+    "藤田産科・婦人科医院 診療",
+    "https://fujita-ladies.jp/medical/"
    ]
   ]
  },
