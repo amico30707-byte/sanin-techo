@@ -7,7 +7,7 @@ import json, re, os, html, shutil, urllib.parse
 CONFIG = {
     "SITE_URL": "https://sanin-techo.jp",   # ← 取ったドメイン（例 https://sanin-techo.jp）
     "AMAZON_TAG": "",                     # ← AmazonアソシエイトのトラッキングID（例 xxxx-22）
-    "CONTACT_EMAIL": "",                  # ← お問い合わせ用のメールアドレス
+    "CONTACT_EMAIL": "info@sanin-techo.jp",                  # ← お問い合わせ用のメールアドレス
     "CONTACT_FORM_URL": "",               # ← Googleフォームなどを使うときのURL（なければ空）
     "COMPANY": "株式会社Bright Future Family",
     "REPRESENTATIVE": "藤川 海美",
