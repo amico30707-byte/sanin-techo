@@ -482,7 +482,7 @@ add("area.html", "エリアでさがす｜京都府の産院・助産所", "京�
 # 産院ページ
 for h in H:
     a = area_of[h["ward"]]
-    srcs = "".join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' for t,u in h["src"])
+    srcs = "".join((f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(t)}</a></li>' if u else f'<li>{esc(t)}</li>') for t,u in h["src"])
     tot = (f'<dl class="spec"><dt>総額の平均</dt><dd>{yen(h["total"]["avg"])}</dd><dt>総額のまん中の値</dt><dd>{yen(h["total"]["med"]) if h["total"]["med"] else "記載なし"}</dd><dt>入院日数</dt><dd>{"約"+str(h["days"])+"日" if h["days"] else "記載なし"}</dd></dl>' if h["total"] else "<p>国の「出産なび」には、まだ総額のデータがありません。</p>")
     extra = ('<ul style="margin-top:14px">' + "".join(f"<li>{esc(x)}</li>" for x in h["extra"]) + "</ul>") if h["extra"] else ""
     same = [x for x in H if x["ward"] in a["list"] and x["id"] != h["id"]]
