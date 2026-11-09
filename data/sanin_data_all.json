@@ -1338,9 +1338,9 @@
    "text": "病院の費用の目安（はじめてのお産で約47万円から・税込）に個室代がふくまれています"
   },
   "painless": {
-   "ok": null,
+   "ok": false,
    "cost": null,
-   "text": "公開されていません"
+   "text": "無痛分娩・和痛分娩はしていません（病院のよくある質問より）"
   },
   "oiwai": {
    "ok": true,
@@ -1365,6 +1365,10 @@
    [
     "宇治市 産後ケアサービス",
     "https://www.city.uji.kyoto.jp/site/kosodate/7151.html"
+   ],
+   [
+    "宇治徳洲会病院 よくある問い合わせ",
+    "https://www.ujitoku.or.jp/contact-intro/qa/"
    ]
   ]
  },
