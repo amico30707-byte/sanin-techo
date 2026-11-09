@@ -298,6 +298,8 @@ def page(fname, title, desc, body, nav="", crumbs=None, preview=False):
     return f"""<!doctype html>
 <html lang="ja"><head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5V88ZQWV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 {head}
 </head><body>
