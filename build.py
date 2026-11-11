@@ -288,6 +288,8 @@ CSS_EXTRA = """
 .rc-foot{margin-top:12px;font-family:var(--display);font-weight:700;font-size:1rem}
 .rc-foot b{color:var(--beni)}
 .rc-note{font-size:.75rem;color:var(--sub);margin:.4em 0 0}
+/* print */
+@media print{header.top,footer,.actions,.related,.crumb{display:none!important}body{background:#fff}a{color:inherit;text-decoration:none}}
 /* nav on phone */
 @media (max-width:640px){
  header.top .wrap{padding-block:10px 0;gap:6px}
@@ -530,6 +532,7 @@ kuraberu_body = f"""
       <label class="chk"><input type="checkbox" id="opt-oiwai"> お祝い膳を食べたい</label>
     </div>
     <div class="row"><span class="label">エリア</span><select id="area-sel" class="pill" aria-label="エリアをえらぶ"></select></div>
+    <div class="row"><span class="label">ならび順</span><select id="sort-sel" class="pill" aria-label="ならび順をえらぶ"><option value="area">地域の順</option><option value="mine">じぶん払いの目安が少ない順</option><option value="total">いまの総額（参考）が少ない順</option></select></div>
   </div>
   <div id="notes"></div>
   <div id="cards" class="cards narrow-only"></div>
@@ -540,7 +543,7 @@ kuraberu_body = f"""
     </table>
   </div>
   <details><summary>ことばの説明（計画分娩・硬膜外麻酔など）</summary><p>計画分娩：日にちを決めて入院し、お産をする方法です。<br>硬膜外麻酔：せなかから細い管を入れて、痛みをやわらげるお薬を入れる方法です。<br>和痛分娩：痛みをやわらげるお産のことです。病院によって、麻酔をつかう方法をこうよぶこともあれば、注射など別の方法をこうよぶこともあります。<br>医学的に必要なときのみ：お母様の希望ではなく、お体の状態で先生が必要と判断したときだけ行う、という意味です。<br>LDR：陣痛からお産、お産のあとまで、同じお部屋ですごせるお部屋です。<br>母子同室・母子別室：入院中、赤ちゃんとお母様が同じお部屋か、別のお部屋かのちがいです。</p></details>
-  <p class="note">ならび順は地域ごとで、おすすめ順ではありません。個室の金額がいくつかある産院は、いちばん安い個室で計算しています。「いまの総額」は国の「出産なび」の2025年4〜9月の実績の平均で、無償化の前の金額です。金額は{CONFIG["CHECKED"]}〜2026年11月11日に調べたもので、変わることがあります。</p>
+  <p class="note">はじめは地域ごとのならびです。「ならび順」をかえると、えらんだ金額の順にならびます（金額がわからない産院や、えらんだことができない産院は後ろに出ます）。どのならびも、おすすめ順ではありません。個室の金額がいくつかある産院は、いちばん安い個室で計算しています。「いまの総額」は国の「出産なび」の2025年4〜9月の実績の平均で、無償化の前の金額です。金額は{CONFIG["CHECKED"]}〜2026年11月11日に調べたもので、変わることがあります。</p>
 </section>
 <script>
 const H={json.dumps(kdata,ensure_ascii=False)};
@@ -727,7 +730,7 @@ add("contact.html", "お問い合わせ", "さんいん手帖 京都へのお問
 # ---------- 書き出し ----------
 KJS = r"""
 (function(){
-const state={room:true,painless:false,oiwai:false,ward:"すべて"};
+const state={room:true,painless:false,oiwai:false,ward:"すべて",sort:"area"};
 try{const s=JSON.parse(localStorage.getItem("sanin-sim")||"null");if(s)Object.assign(state,s);}catch(e){}
 const WARDS=AREAS.flatMap(a=>a.list);
 if(state.ward!=="すべて"&&!WARDS.includes(state.ward)&&!AREAS.some(a=>"@"+a.label===state.ward))state.ward="すべて";
@@ -750,7 +753,9 @@ const opt=(v,t)=>'<option value="'+v+'"'+(state.ward===v?" selected":"")+'>'+t+'
 sel.innerHTML=opt("すべて","京都府ぜんたい")+AREAS.map(a=>'<optgroup label="'+a.label+'">'+opt("@"+a.label,a.label+"ぜんたい")+a.list.filter(w=>H.some(h=>h.ward===w)).map(w=>opt(w,w)).join("")+'</optgroup>').join("");
 ["room","painless","oiwai"].forEach(k=>document.getElementById("opt-"+k).checked=state[k]);
 function draw(){
- const list=H.filter(h=>inArea(h.ward,state.ward));
+ let list=H.filter(h=>inArea(h.ward,state.ward));
+ if(state.sort==="mine"){const k=h=>{const m=mine(h);return (m.no.length?2e9:0)+(m.unk.length?1e9:0)+m.sum;};list=list.slice().sort((a,b)=>k(a)-k(b));}
+ if(state.sort==="total"){const k=h=>h.total?h.total.avg:9e9;list=list.slice().sort((a,b)=>k(a)-k(b));}
  document.getElementById("rows").innerHTML=list.map(h=>'<tr><th><a href="sanin-'+h.id+'.html">'+esc(h.name)+'</a><small>'+h.ward+'・'+esc(h.type)+'</small></th>'+cell(h)+'<td>'+esc(h.room.text)+'</td><td>'+esc(h.painless.text)+'</td><td>'+esc(h.oiwai.text)+'</td><td>'+esc(h.tachiai)+'</td><td class="num">'+(h.total?"平均 "+man(h.total.avg)+(h.days?"<br>入院 約"+h.days+"日":""):"出産なびに記載なし")+'</td></tr>').join("")||'<tr><td colspan="7">このエリアでは、お産ができる施設が確認できませんでした。</td></tr>';
  const pl=h=>{const r=h.room.perDay,p=h.painless,o=h.oiwai;
   const a=r===null?["公開されていない","unk"]:(r===0?["差額なし","ok"]:["1日"+r.toLocaleString("ja-JP")+"円から","ok"]);
@@ -764,7 +769,9 @@ function draw(){
 }
 document.addEventListener("change",e=>{const m={"opt-room":"room","opt-painless":"painless","opt-oiwai":"oiwai"};
  if(m[e.target.id]){state[m[e.target.id]]=e.target.checked;save();draw();}
- if(e.target.id==="area-sel"){state.ward=e.target.value;save();draw();}});
+ if(e.target.id==="area-sel"){state.ward=e.target.value;save();draw();}
+ if(e.target.id==="sort-sel"){state.sort=e.target.value;save();draw();}});
+document.getElementById("sort-sel").value=state.sort||"area";
 draw();
 })();
 """

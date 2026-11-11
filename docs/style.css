@@ -162,6 +162,8 @@ article.post .src{font-size:.85rem;color:var(--sub)}
 .rc-foot{margin-top:12px;font-family:var(--display);font-weight:700;font-size:1rem}
 .rc-foot b{color:var(--beni)}
 .rc-note{font-size:.75rem;color:var(--sub);margin:.4em 0 0}
+/* print */
+@media print{header.top,footer,.actions,.related,.crumb{display:none!important}body{background:#fff}a{color:inherit;text-decoration:none}}
 /* nav on phone */
 @media (max-width:640px){
  header.top .wrap{padding-block:10px 0;gap:6px}

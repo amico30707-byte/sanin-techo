@@ -1,6 +1,6 @@
 
 (function(){
-const state={room:true,painless:false,oiwai:false,ward:"すべて"};
+const state={room:true,painless:false,oiwai:false,ward:"すべて",sort:"area"};
 try{const s=JSON.parse(localStorage.getItem("sanin-sim")||"null");if(s)Object.assign(state,s);}catch(e){}
 const WARDS=AREAS.flatMap(a=>a.list);
 if(state.ward!=="すべて"&&!WARDS.includes(state.ward)&&!AREAS.some(a=>"@"+a.label===state.ward))state.ward="すべて";
@@ -23,7 +23,9 @@ const opt=(v,t)=>'<option value="'+v+'"'+(state.ward===v?" selected":"")+'>'+t+'
 sel.innerHTML=opt("すべて","京都府ぜんたい")+AREAS.map(a=>'<optgroup label="'+a.label+'">'+opt("@"+a.label,a.label+"ぜんたい")+a.list.filter(w=>H.some(h=>h.ward===w)).map(w=>opt(w,w)).join("")+'</optgroup>').join("");
 ["room","painless","oiwai"].forEach(k=>document.getElementById("opt-"+k).checked=state[k]);
 function draw(){
- const list=H.filter(h=>inArea(h.ward,state.ward));
+ let list=H.filter(h=>inArea(h.ward,state.ward));
+ if(state.sort==="mine"){const k=h=>{const m=mine(h);return (m.no.length?2e9:0)+(m.unk.length?1e9:0)+m.sum;};list=list.slice().sort((a,b)=>k(a)-k(b));}
+ if(state.sort==="total"){const k=h=>h.total?h.total.avg:9e9;list=list.slice().sort((a,b)=>k(a)-k(b));}
  document.getElementById("rows").innerHTML=list.map(h=>'<tr><th><a href="sanin-'+h.id+'.html">'+esc(h.name)+'</a><small>'+h.ward+'・'+esc(h.type)+'</small></th>'+cell(h)+'<td>'+esc(h.room.text)+'</td><td>'+esc(h.painless.text)+'</td><td>'+esc(h.oiwai.text)+'</td><td>'+esc(h.tachiai)+'</td><td class="num">'+(h.total?"平均 "+man(h.total.avg)+(h.days?"<br>入院 約"+h.days+"日":""):"出産なびに記載なし")+'</td></tr>').join("")||'<tr><td colspan="7">このエリアでは、お産ができる施設が確認できませんでした。</td></tr>';
  const pl=h=>{const r=h.room.perDay,p=h.painless,o=h.oiwai;
   const a=r===null?["公開されていない","unk"]:(r===0?["差額なし","ok"]:["1日"+r.toLocaleString("ja-JP")+"円から","ok"]);
@@ -37,6 +39,8 @@ function draw(){
 }
 document.addEventListener("change",e=>{const m={"opt-room":"room","opt-painless":"painless","opt-oiwai":"oiwai"};
  if(m[e.target.id]){state[m[e.target.id]]=e.target.checked;save();draw();}
- if(e.target.id==="area-sel"){state.ward=e.target.value;save();draw();}});
+ if(e.target.id==="area-sel"){state.ward=e.target.value;save();draw();}
+ if(e.target.id==="sort-sel"){state.sort=e.target.value;save();draw();}});
+document.getElementById("sort-sel").value=state.sort||"area";
 draw();
 })();
