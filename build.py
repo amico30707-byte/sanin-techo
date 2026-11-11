@@ -528,7 +528,10 @@ for a in AREAS:
     chips = "".join((f'<span class="area">{w}<i>{sum(1 for h in hs if h["ward"]==w)}か所</i></span>' if any(h["ward"]==w for h in hs) else f'<span class="area">{w}<i>なし</i></span>') for w in a["list"])
     area_index += f'<h2 style="margin-top:1.4em"><a href="area-{a["slug"]}.html">{a["label"]}</a>（{len(hs)}か所）</h2><div class="areas" style="margin-top:6px">{chips}</div>'
     notes = "".join(f'<div class="wardnote"><b>{w}について</b><br>{NOTES[w]}</div>' for w in a["list"] if w in NOTES)
-    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{notes}{htable(hs)}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
+    n_pl = sum(1 for h in hs if h["painless"]["ok"] is True); n_rf = sum(1 for h in hs if h["room"].get("perDay")==0); n_oi = sum(1 for h in hs if h["oiwai"]["ok"] is True)
+    n_js = sum(1 for h in hs if "助産所" in h["type"])
+    summ = f'<ul class="areasum"><li>お産ができる施設：{len(hs)}か所（うち助産所 {n_js}か所）</li><li>お母様の希望で無痛分娩ができると公開：{n_pl}か所</li><li>ふつうの個室を追加なしで使えると公開：{n_rf}か所</li><li>お祝い膳があると公開：{n_oi}か所</li></ul><p class="note">公開されている情報と、産院への問い合わせでわかったことだけを数えています。くわしい条件は各産院のページでたしかめてください。</p>' if hs else ""
+    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{summ}{notes}{htable(hs)}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
     add(f"area-{a['slug']}.html", f"{a['label']}の産院・助産所（{len(hs)}か所）の個室・無痛分娩・お祝い膳", f"京都府{a['label']}（{'・'.join(a['list'])}）でお産ができる産院・助産所{len(hs)}か所の、個室・無痛分娩・お祝い膳・立ち会いのちがいを出どころつきでまとめました。", body, "area", [("トップ","index.html"),("エリアでさがす","area.html"),(a["label"],f"area-{a['slug']}.html")])
 area_index += '<p class="note">「なし」は、その市町村の中でお産ができる施設が確認できなかったところです。</p></section>'
 add("area.html", "エリアでさがす｜京都府の産院・助産所", "京都府を8つの地域に分けて、お産ができる産院・助産所をのせています。", area_index, "area", [("トップ","index.html"),("エリアでさがす","area.html")])
