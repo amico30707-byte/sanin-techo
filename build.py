@@ -310,6 +310,14 @@ def page(fname, title, desc, body, nav="", crumbs=None, preview=False):
         items = [{"@type":"ListItem","position":i+1,"name":n,"item":CONFIG["SITE_URL"].rstrip("/")+"/"+u} for i,(n,u) in enumerate(crumbs)]
         ld = '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":items},ensure_ascii=False)+'</script>'
         body = '<div class="crumb">' + " ／ ".join(f'<a href="{u}">{esc(n)}</a>' if i < len(crumbs)-1 else esc(n) for i,(n,u) in enumerate(crumbs)) + '</div>' + body
+    if fname in ART_META:
+        dt = ART_META[fname]
+        m_ = re.match(r"(\d+)年(\d+)月(\d+)日", dt)
+        iso = f"{m_.group(1)}-{int(m_.group(2)):02d}-{int(m_.group(3)):02d}" if m_ else None
+        art_ld = {"@context":"https://schema.org","@type":"Article","headline":title[:110],"description":desc,"inLanguage":"ja","mainEntityOfPage":canon,
+                  "author":{"@type":"Organization","name":CONFIG["COMPANY"]},"publisher":{"@type":"Organization","name":SITE_NAME}}
+        if iso: art_ld["datePublished"]=iso; art_ld["dateModified"]=iso
+        ld += '<script type="application/ld+json">'+json.dumps(art_ld,ensure_ascii=False)+'</script>'
     head = f"""<title>{esc(full_title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{esc(canon)}">
@@ -354,6 +362,7 @@ def page(fname, title, desc, body, nav="", crumbs=None, preview=False):
 # ---------- 各ページ ----------
 pages = {}   # fname -> (title, desc, body, nav, crumbs)
 def add(fname, title, desc, body, nav="", crumbs=None): pages[fname] = (title, desc, body, nav, crumbs)
+ART_META = {}
 
 count = len(H)
 cards = lambda arts: '<div class="yomi">' + "".join(f'<a class="box" href="yomimono-{a["id"]}.html"><span class="date">{a["date"]}</span><h3>{esc(a["title"])}{"<span class=prtag>PR</span>" if a["pr"] else ""}</h3></a>' for a in arts) + '</div>'
@@ -574,7 +583,12 @@ for art in ARTICLES:
     nav = "junbi" if art["id"].startswith("junbi") else "yomimono"
     parent = ("出産じゅんび","junbi.html") if nav=="junbi" else ("読みもの","yomimono.html")
     first_para = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", art["body"].split("\n")[0])[:110]
-    body = f'<article class="post"><span class="eyebrow">{art["date"]}</span><h1>{esc(art["title"])}</h1>{PRNOTE if art["pr"] else ""}{md(art["body"])}<div class="actions"><a class="btn main" href="kuraberu.html">京都の産院をくらべる</a><a class="btn line" href="{parent[1]}">ほかの記事</a></div></article>'
+    pool = junbi_arts if nav=="junbi" else main_arts
+    i_ = next(k for k,a in enumerate(pool) if a["id"]==art["id"])
+    rel = [pool[(i_+k) % len(pool)] for k in range(1, min(4, len(pool)))]
+    relhtml = '<section class="related" style="margin-top:28px"><h2 style="font-size:1.05rem">あわせて読みたい</h2>' + cards(rel) + '</section>'
+    ART_META[f"yomimono-{art['id']}.html"] = art["date"]
+    body = f'<article class="post"><span class="eyebrow">{art["date"]}</span><h1>{esc(art["title"])}</h1>{PRNOTE if art["pr"] else ""}{md(art["body"])}<div class="actions"><a class="btn main" href="kuraberu.html">京都の産院をくらべる</a><a class="btn line" href="{parent[1]}">ほかの記事</a></div>{relhtml}</article>'
     add(f"yomimono-{art['id']}.html", art["title"], first_para, body, nav, [("トップ","index.html"),parent,(art["title"],f"yomimono-{art['id']}.html")])
 add("yomimono.html", "読みもの｜無償化・産後ケア・産院えらび", "出産費用の無償化、京都府の産後ケア、無痛分娩ができる産院など、産院えらびの前に知っておきたいことをまとめています。", f'<section style="border-top:0"><span class="tag">読みもの</span><h1 class="ph">知っておきたいこと</h1>{cards(main_arts)}</section>', "yomimono", [("トップ","index.html"),("読みもの","yomimono.html")])
 add("junbi.html", "出産じゅんび｜入院バッグ・ベビー用品・内祝い", "入院バッグの中身、ベビー用品の準備、出産内祝いのきほんをまとめています。", f'<section style="border-top:0"><span class="tag">じゅんび</span><h1 class="ph">出産までに、そろえるもの</h1><p class="lead">このページの記事には、広告（アフィリエイトリンク）がふくまれます。</p>{cards(junbi_arts)}</section>', "junbi", [("トップ","index.html"),("出産じゅんび","junbi.html")])
