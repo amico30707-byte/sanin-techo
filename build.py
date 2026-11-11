@@ -484,7 +484,8 @@ top = f"""
 <section>
   <span class="tag">読みもの</span>
   <h2>知っておきたいこと</h2>
-  {cards(main_arts)}
+  {cards([a for i in ["mushouka","mushouka-faq","hiyou-kyoto","koshitsu-kyoto","mutsu-kyoto","erabikata"] for a in main_arts if a["id"]==i])}
+  <div class="actions"><a class="btn line" href="yomimono.html">読みものをすべて見る（{len(main_arts)}本）</a></div>
 </section>
 <section>
   <span class="tag">じゅんび</span>
