@@ -229,7 +229,8 @@
     "京都市立病院 産婦人科",
     "https://www.kch-org.jp/outline/section/sanfujinka"
    ]
-  ]
+  ],
+  "checked": "2026年11月7日"
  },
  {
   "id": "yamamoto",
@@ -252,8 +253,8 @@
   },
   "oiwai": {
    "ok": true,
-   "cost": 3300,
-   "text": "お祝い膳 3,000円（税別）。火・金曜の夕食"
+   "cost": 3000,
+   "text": "お祝い膳 3,000円（税別と案内）。火・金曜の夕食"
   },
   "tachiai": "できる（夫やパートナー、お子様、ご両親）",
   "family": "面会は夫やパートナー、お子様、ご両親、ごきょうだい",
@@ -275,7 +276,8 @@
     "山元病院 よくある質問",
     "https://www.yamamoto-hospital.gr.jp/contact/"
    ]
-  ]
+  ],
+  "checked": "2026年11月7日"
  },
  {
   "id": "hosoda",
@@ -321,7 +323,8 @@
     "細田クリニック 医院案内",
     "https://hosodaclinic.jp/clinicinfo/"
    ]
-  ]
+  ],
+  "checked": "2026年11月7日"
  },
  {
   "id": "kashiwagi",
@@ -370,7 +373,8 @@
     "柏木産婦人科への問い合わせ（2026年11月10日に回答をいただきました）",
     ""
    ]
-  ]
+  ],
+  "checked": "2026年11月10日"
  },
  {
   "id": "miniren",

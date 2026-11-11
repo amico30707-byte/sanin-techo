@@ -138,7 +138,7 @@ def gen_closure_article():
 def gen_room_article():
     lines = ["出産費用の無償化が始まると、お産そのものの費用は産院によるちがいが小さくなります。そのぶん、個室をえらぶかどうかや、個室の料金が、じぶんで払う部分として大きくなります。京都府の産院の個室の料金を、地域ごとにまとめました。",
              "",
-             "ならび順は地域ごとで、おすすめ順ではありません。金額は、公開されている1日あたりの追加の料金（差額）です。お部屋のタイプによって金額がちがう産院では、いちばん低い金額を目安にのせ、くわしくは各産院のページに書いています。",
+             "ならび順は地域ごとで、おすすめ順ではありません。金額は、公開されている1日あたりの追加の料金（差額）です。お部屋のタイプや、お住まいの地域、入院の日数などで金額がかわる産院もあるので、くわしくは各産院のページでたしかめてください。",
              "",
              "## 見かたのポイント",
              "- 個室代の目安：5日入院すると、1日の差額 × 5日ぶんがかかります。たとえば1日5,000円なら、5日で25,000円です",
@@ -150,12 +150,10 @@ def gen_room_article():
         if not hs: continue
         lines += ["", f"## {a['label']}"]
         for h in hs:
-            r = h["room"]; pd = r.get("perDay")
-            head = "追加なし" if pd == 0 else ((f"1日{yen(pd)}から" + ("（税込の目安）" if "税別" in r["text"] else "")) if pd else "金額は公開されていません")
-            if pd is None and "公開されていません" in r["text"]: head = ""
-            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：" + (head + "。" if head else "") + r["text"])
+            r = h["room"]
+            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：{r['text']}")
     known = sum(1 for h in H if h["room"].get("perDay") is not None)
-    lines += ["", "## まだ公開されていない産院", f"{len(H)}か所のうち、個室の追加の料金がわかっているのは{known}か所です。のこりの産院は、さんいん手帖から問い合わせて、わかりしだい書きくわえていきます。",
+    lines += ["", "## 金額がまだわからない産院について", f"{len(H)}か所のうち、個室の追加の料金（追加なしをふくむ）がわかっているのは{known}か所です。のこりの産院は、金額が公開されていないか、一部しかわかっていません。さんいん手帖から問い合わせて、わかりしだい書きくわえていきます。",
               "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
     return {"id":"koshitsu-kyoto","title":"京都府の産院の個室代（1日あたりの追加料金）まとめ｜無償化のあとはじぶんで払う部分（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
 
@@ -169,7 +167,7 @@ def gen_oiwai_article():
         lines += ["", f"## {a['label']}"]
         for h in hs:
             c = h["oiwai"].get("cost")
-            head = "追加料金なし" if c == 0 else ((f"{yen(c)}" + ("（税込の目安）" if "税別" in h["oiwai"]["text"] else "")) if c else "")
+            head = "追加料金なし" if c == 0 else (f"{yen(c)}" if c else "")
             if head and ("追加料金なし" in h["oiwai"]["text"] or "無料" in h["oiwai"]["text"] or "円" in h["oiwai"]["text"]): head = "" if c == 0 else head
             lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：" + (head + "。" if head else "") + h["oiwai"]["text"])
     no = [h for h in H if h["oiwai"]["ok"] is False]
@@ -256,7 +254,7 @@ CSS_EXTRA = """
 /* nav on phone */
 @media (max-width:640px){
  header.top .wrap{padding-block:10px 0;gap:6px}
- nav.menu{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;gap:0 18px;padding-bottom:10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ nav.menu{flex-wrap:wrap;width:100%;gap:2px 16px;padding-bottom:10px}
  nav.menu::-webkit-scrollbar{display:none}
  nav.menu a{padding:4px 0}
 }
@@ -337,7 +335,7 @@ def page(fname, title, desc, body, nav="", crumbs=None, preview=False):
 <footer><div class="wrap">
   <nav aria-label="サイトについて"><a href="about.html">運営者・このサイトについて</a><a href="ad-policy.html">広告について</a><a href="privacy.html">プライバシーポリシー</a><a href="contact.html">お問い合わせ</a></nav>
   <div>{SITE_NAME}｜運営：{CONFIG["COMPANY"]}</div>
-  <div>情報の出どころ：厚生労働省「出産なび」、各産院のホームページ、京都府内の市町村の資料。調べた日：{CONFIG["CHECKED"]}。</div>
+  <div>情報の出どころ：厚生労働省「出産なび」、各産院のホームページ、京都府内の市町村の資料、産院への問い合わせ。調べた日：{CONFIG["CHECKED"]}〜2026年11月11日（産院ごとの調べた日は、各産院のページにあります）。</div>
   <div>料金やサービスは変わることがあります。かならず産院にご確認ください。このサイトは医療のアドバイスをするものではありません。</div>
 </div></footer>"""
     if preview:
@@ -493,7 +491,7 @@ kuraberu_body = f"""
     </table>
   </div>
   <details><summary>ことばの説明（計画分娩・硬膜外麻酔など）</summary><p>計画分娩：日にちを決めて入院し、お産をする方法です。<br>硬膜外麻酔：せなかから細い管を入れて、痛みをやわらげるお薬を入れる方法です。<br>和痛分娩：痛みをやわらげるお産のことです。病院によって、麻酔をつかう方法をこうよぶこともあれば、注射など別の方法をこうよぶこともあります。<br>医学的に必要なときのみ：お母様の希望ではなく、お体の状態で先生が必要と判断したときだけ行う、という意味です。<br>LDR：陣痛からお産、お産のあとまで、同じお部屋ですごせるお部屋です。<br>母子同室・母子別室：入院中、赤ちゃんとお母様が同じお部屋か、別のお部屋かのちがいです。</p></details>
-  <p class="note">ならび順は地域ごとで、おすすめ順ではありません。個室の金額がいくつかある産院は、いちばん安い個室で計算しています。「いまの総額」は国の「出産なび」の2025年4〜9月の実績の平均で、無償化の前の金額です。金額は{CONFIG["CHECKED"]}に調べたもので、変わることがあります。</p>
+  <p class="note">ならび順は地域ごとで、おすすめ順ではありません。個室の金額がいくつかある産院は、いちばん安い個室で計算しています。「いまの総額」は国の「出産なび」の2025年4〜9月の実績の平均で、無償化の前の金額です。金額は{CONFIG["CHECKED"]}〜2026年11月11日に調べたもので、変わることがあります。</p>
 </section>
 <script>
 const H={json.dumps(kdata,ensure_ascii=False)};
@@ -539,7 +537,7 @@ for h in H:
 <div class="hhead">
   <span class="eyebrow">{h["ward"]}</span>
   <h1>{esc(h["name"])}</h1>
-  <div class="meta"><span>{esc(h["type"])}</span><span>調べた日 {CONFIG["CHECKED"]}</span></div>
+  <div class="meta"><span>{esc(h["type"])}</span><span>調べた日 {h.get("checked", CONFIG["CHECKED"])}</span></div>
 </div>
 {note}
 <div class="hsum">{pills(h)}</div>

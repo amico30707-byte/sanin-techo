@@ -165,7 +165,7 @@ article.post .src{font-size:.85rem;color:var(--sub)}
 /* nav on phone */
 @media (max-width:640px){
  header.top .wrap{padding-block:10px 0;gap:6px}
- nav.menu{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;gap:0 18px;padding-bottom:10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ nav.menu{flex-wrap:wrap;width:100%;gap:2px 16px;padding-bottom:10px}
  nav.menu::-webkit-scrollbar{display:none}
  nav.menu a{padding:4px 0}
 }
