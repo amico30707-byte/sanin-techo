@@ -135,6 +135,43 @@ def gen_closure_article():
               "", f"（出どころ：各病院のお知らせ・ホームページ、厚生労働省「出産なび」。{CONFIG['CHECKED']}に調べました）"]
     return {"id":"bunben-kyoto","title":"京都府でお産ができる場所が減っています｜お産をやめた病院と、施設がない市町村（2026年）","date":CONFIG["CHECKED"],"pr":False,"body":"\n".join(lines)}
 
+def gen_total_article():
+    hs_all = [h for h in H if h.get("total") and h["total"].get("avg")]
+    avgs = sorted(h["total"]["avg"] for h in hs_all)
+    mean = round(sum(avgs)/len(avgs), -3)
+    lines = [f"京都府でお産ができる産院・助産所の、いまの出産費用（総額）を地域ごとにまとめました。数字は、国の「出産なび」にのっている、2025年4〜9月の実際の請求の平均です。さんいん手帖で調べた{len(H)}か所のうち、{len(hs_all)}か所の数字がわかっています。",
+             "",
+             "ならび順は地域ごとで、おすすめ順ではありません。総額には、個室代やお祝い膳、無痛分娩の料金などがふくまれていることがあり、産院によって中身がちがいます。安い・高いだけで産院をくらべず、中身もあわせてたしかめてください。",
+             "",
+             "## 京都府全体の目安",
+             f"- 総額の平均は、いちばん低い産院で{man(avgs[0])}、いちばん高い産院で{man(avgs[-1])}です",
+             f"- {len(hs_all)}か所の平均をならすと、およそ{man(mean)}です",
+             "- いまは、出産育児一時金（原則50万円）がもらえます。総額が50万円をこえた分は、じぶんで払うことになります",
+             "- 帝王切開などのお産は保険のしくみで払うので、ここの数字とはちがう金額になります",
+             "",
+             "## 無償化のあとはどうなる？",
+             "- ふつうのお産（正常分娩）は、全国おなじ金額が保険から払われるしくみに変わる予定です。そのため、この総額の差は小さくなると考えられます",
+             "- いっぽうで、個室代・お祝い膳・無痛分娩など「じぶんで払う部分」は残る方向です。くわしくは記事「[出産費用の無償化はいつから？](yomimono-mushouka.html)」をごらんください",
+             "- じぶんで払う部分の目安は、[京都の産院をくらべる](kuraberu.html)で計算できます"]
+    for a in AREAS:
+        hs = [h for h in H if h["ward"] in a["list"]]
+        if not hs: continue
+        lines += ["", f"## {a['label']}"]
+        for h in hs:
+            t = h.get("total") or {}
+            if t.get("avg"):
+                med = f"、まん中の値{man(t['med'])}" if t.get("med") else ""
+                days = f"、入院は約{h['days']}日" if h.get("days") else ""
+                lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：平均{man(t['avg'])}{med}{days}")
+            else:
+                lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：出産なびに総額の数字がありません")
+    lines += ["", "## 数字を見るときの注意",
+              "- 平均は、その産院でお産をした方の請求の平均です。お産の進み方や、えらんだお部屋によって、ひとりひとりの金額はかわります",
+              "- 「まん中の値」は、金額の順にならべたときにまん中にくる方の金額です。平均より実際の感じに近いことがあります",
+              "- 数字は2025年4〜9月のもので、いまの料金とちがうことがあります。最新の料金は産院でたしかめてください",
+              "", f"（出どころ：厚生労働省「出産なび」〔2025年4〜9月の請求の実績〕。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
+    return {"id":"hiyou-kyoto","title":"京都府の産院の出産費用（総額）一覧｜地域ごと・出産なびの実績から（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
+
 def gen_room_article():
     lines = ["出産費用の無償化が始まると、お産そのものの費用は産院によるちがいが小さくなります。そのぶん、個室をえらぶかどうかや、個室の料金が、じぶんで払う部分として大きくなります。京都府の産院の個室の料金を、地域ごとにまとめました。",
              "",
@@ -180,7 +217,7 @@ def gen_oiwai_article():
               "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
     return {"id":"oiwai-kyoto","title":"京都府の産院のお祝い膳まとめ｜追加料金はかかる？（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
 
-ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + [gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
+ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + [gen_total_article(), gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
 for a in ARTICLES:
     a["body"] = a["body"].replace("さんいん手帖の「京都の産院をくらべる」ページ", "さんいん手帖の「[京都の産院をくらべる](kuraberu.html)」ページ").replace("記事「京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金」","記事「[京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金](yomimono-sangocare.html)」")
 
