@@ -217,7 +217,7 @@ def gen_oiwai_article():
               "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
     return {"id":"oiwai-kyoto","title":"京都府の産院のお祝い膳まとめ｜追加料金はかかる？（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
 
-ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + read_articles("content/articles_seido.md") + read_articles("content/articles_erabi.md") + [gen_total_article(), gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
+ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + read_articles("content/articles_seido.md") + read_articles("content/articles_erabi.md") + read_articles("content/articles_okane.md") + [gen_total_article(), gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
 for a in ARTICLES:
     a["body"] = a["body"].replace("さんいん手帖の「京都の産院をくらべる」ページ", "さんいん手帖の「[京都の産院をくらべる](kuraberu.html)」ページ").replace("記事「京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金」","記事「[京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金](yomimono-sangocare.html)」")
 
@@ -648,9 +648,9 @@ for art in ARTICLES:
     body = f'<article class="post"><span class="eyebrow">{art["date"]}</span><h1>{esc(art["title"])}</h1>{PRNOTE if art["pr"] else ""}{md(art["body"])}<div class="actions"><a class="btn main" href="kuraberu.html">京都の産院をくらべる</a><a class="btn line" href="{parent[1]}">ほかの記事</a></div>{relhtml}</article>'
     add(f"yomimono-{art['id']}.html", art["title"], first_para, body, nav, [("トップ","index.html"),parent,(art["title"],f"yomimono-{art['id']}.html")])
 CATS = [("京都の産院のデータ", ["hiyou-kyoto","mutsu-kyoto","koshitsu-kyoto","oiwai-kyoto","tachiai","yoyaku","josanjo","bunben-kyoto"]),
-        ("無償化・お金・制度", ["mushouka","mushouka-faq","ichijikin","teiou","shien-kyufu","kenshin-kyoto"]),
-        ("産院のえらび方", ["erabikata","checklist","kotoba","satogaeri"]),
-        ("産後ケア", ["sangocare-fu","sangocare"])]
+        ("無償化・お金・制度", ["mushouka","mushouka-faq","okane-zentai","ichijikin","teiou","shien-kyufu","kenshin-kyoto","sankyu-ikukyu","iryouhi-koujo"]),
+        ("産院のえらび方", ["erabikata","checklist","mutsu-kihon","kotoba","satogaeri"]),
+        ("産後ケア・産後のお手伝い", ["sangocare-fu","sangocare","sango-sapo"])]
 _seen = set(); _grp = ""
 for _t, _ids in CATS:
     _arts = [a for i in _ids for a in main_arts if a["id"]==i]
