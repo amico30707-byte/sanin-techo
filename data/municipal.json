@@ -1,0 +1,472 @@
+[
+ {
+  "name": "京都市",
+  "techo": {
+   "label": "区役所・支所 子どもはぐくみ室 又は 京北出張所",
+   "url": "https://www.city.kyoto.lg.jp/hagukumi/page/0000354192.html"
+  },
+  "kenshin": "https://www.city.kyoto.lg.jp/hagukumi/page/0000232623.html",
+  "sangocare": {
+   "url": "https://www.city.kyoto.lg.jp/hagukumi/page/0000168986.html",
+   "fee": "利用料（1回当たり）【令和8年4月1日利用分から】 階層区分A：産後ショートステイ 減免前4,900円・減免後3,600円／産後デイケア 減免前2,400円・減免後1,200円／アウトリーチ 減免前1,000円・減免後500円。階層区分B：ショートステイ 減免前4,900円・減免後2,400円／デイケア 減免前2,400円・減免後0円／アウトリーチ 減免前1,000円・減免後0円。C1・C2：ショートステイ490円・デイケア240円・アウトリーチ0円（減免後はいずれも0円）。利用料とは別に施設の食事代等あり"
+  },
+  "shien": "https://www.city.kyoto.lg.jp/hagukumi/page/0000307381.html",
+  "soudan": {
+   "name": "子ども若者はぐくみ局 子ども家庭支援課（相談・面談は各区役所・支所 子どもはぐくみ室）",
+   "tel": "075-222-3939（代表）",
+   "url": "https://www.city.kyoto.lg.jp/hagukumi/page/0000354192.html"
+  },
+  "note": "fee表は表の結合セルを読みとったもの。A・Bの減免前は共通。妊娠の相談は区ごとのはぐくみ室（例：北区075-432-1454）"
+ },
+ {
+  "name": "福知山市",
+  "techo": {
+   "label": "こども家庭支援課の窓口",
+   "url": "https://www.city.fukuchiyama.lg.jp/site/kosodate/78358.html"
+  },
+  "kenshin": "https://www.city.fukuchiyama.lg.jp/site/kosodate/78359.html",
+  "sangocare": {
+   "url": "https://www.city.fukuchiyama.lg.jp/site/kosodate/57418.html",
+   "fee": "産後ケア（通所型）のページ（https://www.city.fukuchiyama.lg.jp/site/kosodate/63435.html）に「利用料金 1,000円（食費は含んでいません）」。宿泊型・訪問型などの金額はページになし"
+  },
+  "shien": "https://www.city.fukuchiyama.lg.jp/site/kosodate/73486.html",
+  "soudan": {
+   "name": "こども家庭支援課",
+   "tel": "0773-24-7055",
+   "url": "https://www.city.fukuchiyama.lg.jp/site/kosodate/78358.html"
+  }
+ },
+ {
+  "name": "舞鶴市",
+  "techo": {
+   "label": "舞鶴市こども家庭センター（中総合会館2階）",
+   "url": "https://www.city.maizuru.kyoto.jp/kosodate/0000009596.html"
+  },
+  "kenshin": "https://www.city.maizuru.kyoto.jp/kosodate/0000009599.html",
+  "sangocare": {
+   "url": "https://www.city.maizuru.kyoto.jp/kosodate/0000012129.html",
+   "fee": "宿泊型【自己負担金】課税世帯 1回 7,500円／非課税世帯・生活保護世帯 1回 1,000円。日帰り型【自己負担金】課税世帯 1回 3,500円／非課税世帯・生活保護世帯 1回 500円（食事代は別途実費）"
+  },
+  "shien": "https://www.city.maizuru.kyoto.jp/kosodate/0000013581.html",
+  "soudan": {
+   "name": "舞鶴市こども家庭センター",
+   "tel": "0773-66-2120（代表）／0773-68-9155（妊娠届や健診など）",
+   "url": "https://www.city.maizuru.kyoto.jp/kosodate/0000001425.html"
+  },
+  "note": "kenshinは「里帰り先で出産される方」のページ（府外受診の償還払い）。受診券だけの専用ページは見つからず"
+ },
+ {
+  "name": "綾部市",
+  "techo": {
+   "label": "綾部市こども支援課（綾部市保健福祉センター内）",
+   "url": "https://www.city.ayabe.lg.jp/0000002630.html"
+  },
+  "kenshin": "https://www.city.ayabe.lg.jp/0000002633.html",
+  "sangocare": {
+   "url": "https://www.city.ayabe.lg.jp/0000003373.html",
+   "fee": "通所型（集団）1回1,000円（食費別途）／宿泊型 1日6,500円／通所型（個別）1回3,500円／訪問型 1回1,000円（生活保護世帯、非課税世帯は利用料金が免除）"
+  },
+  "shien": "https://www.city.ayabe.lg.jp/0000002754.html",
+  "soudan": {
+   "name": "綾部市こども家庭センター「ぷくぷく」（健康こども部こども支援課 母子保健担当）",
+   "tel": "0773-42-0020",
+   "url": "https://www.city.ayabe.lg.jp/0000003159.html"
+  }
+ },
+ {
+  "name": "宇治市",
+  "techo": {
+   "label": "保健推進課 窓口",
+   "url": "https://www.city.uji.kyoto.jp/site/kosodate/5876.html"
+  },
+  "kenshin": "https://www.city.uji.kyoto.jp/site/kosodate/5876.html",
+  "sangocare": {
+   "url": "https://www.city.uji.kyoto.jp/site/kosodate/7151.html",
+   "fee": "宿泊（24時間あたり）A 9,000円／B 6,000円／C 4,000円／D 600円。日帰り型 市内の旅館 A 4,500円／B 3,000円／C 2,000円／D 300円、吉川助産院 A 6,000円／B 4,000円／C 2,600円／D 400円。訪問型（助産師90分～120分あたり）A 3,000円／B 2,000円／C 1,300円／D 300円（A～Dは市民税所得割額による区分。多胎児加算あり）"
+  },
+  "shien": "https://www.city.uji.kyoto.jp/site/kosodate/87302.html",
+  "soudan": {
+   "name": "保健推進課",
+   "tel": "0774-22-3141（代表）",
+   "url": "https://www.city.uji.kyoto.jp/site/kosodate/87302.html"
+  },
+  "note": "techoとkenshinは同じページ（手帳と受診券の交付）。こども家庭センターの名前のページは見つからず"
+ },
+ {
+  "name": "宮津市",
+  "techo": {
+   "label": "宮津市健康・介護課 健康増進係（ミップル4階）",
+   "url": "https://www.city.miyazu.kyoto.jp/site/kosodate/27856.html"
+  },
+  "kenshin": "https://www.city.miyazu.kyoto.jp/site/kosodate/1904.html",
+  "sangocare": {
+   "url": "https://www.city.miyazu.kyoto.jp/site/kosodate/1910.html",
+   "fee": "短期入所（ショートステイ）型 1泊2日3食：6,500円／通所（デイサービス）型 1日1食：500円／居宅訪問（アウトリーチ）型 1日1回4時間以内：1,500円（いずれも市民税非課税世帯、生活保護世帯は0円。利用者負担金減免を申請し承認された場合の額）"
+  },
+  "shien": "https://www.city.miyazu.kyoto.jp/site/kosodate/16971.html",
+  "soudan": {
+   "name": "宮津市こども家庭センター（健康福祉部子ども未来課 子育て応援係）",
+   "tel": "0772-45-1621",
+   "url": "https://www.city.miyazu.kyoto.jp/site/kosodate/22312.html"
+  }
+ },
+ {
+  "name": "亀岡市",
+  "techo": {
+   "label": "BCome+（亀岡市保健センター） こども家庭課母子健康係",
+   "url": "https://www.city.kameoka.kyoto.jp/site/kosodate/3408.html"
+  },
+  "kenshin": "https://www.city.kameoka.kyoto.jp/site/kosodate/3408.html",
+  "sangocare": {
+   "url": "https://www.city.kameoka.kyoto.jp/soshiki/92/3435.html",
+   "fee": "宿泊型 1日（1泊2日） 一般：6,000円 生保・非課税：1,500円／日帰り個別型 一般：2,000円 生保・非課税：500円／訪問型 1回2時間以内 一般：1,200円 生保・非課税：0円"
+  },
+  "shien": "https://www.city.kameoka.kyoto.jp/soshiki/27/47032.html",
+  "soudan": {
+   "name": "こども家庭課 母子健康係（BCome+ 亀岡市保健センター内）",
+   "tel": "0771-24-5016",
+   "url": "https://www.city.kameoka.kyoto.jp/site/kosodate/3408.html"
+  },
+  "note": "kenshinはtechoと同じページ（受診券綴と他府県受診の助成の項目あり）"
+ },
+ {
+  "name": "城陽市",
+  "techo": {
+   "label": "城陽市こども家庭センター内 すくすく親子サポートカウンター",
+   "url": "https://www.joyokids.jp/info/detail/2/2/1/1"
+  },
+  "kenshin": "https://www.joyokids.jp/info/detail/2/5/3/1",
+  "sangocare": {
+   "url": "https://www.joyokids.jp/info/detail/2/154/5/2",
+   "fee": "利用料そのものの金額はページになし。「助成回数の上限は５回（泊）で、１回最大2,500円」（利用料の一部助成）"
+  },
+  "shien": "https://www.joyokids.jp/info/detail/2/159/2/1",
+  "soudan": {
+   "name": "城陽市こども家庭センター（城陽市役所内）",
+   "tel": "0774-55-1113",
+   "url": "https://www.joyokids.jp/info/detail/2/154/5/2"
+  },
+  "note": "市役所ドメイン（city.joyo.kyoto.jp）の妊娠・出産カテゴリにはページがなく、城陽市の子育て支援サイト「JOYO KIDS」（joyokids.jp、©Joyo City）のページ。市役所ドメインではない点に注意"
+ },
+ {
+  "name": "向日市",
+  "techo": {
+   "label": "市民サービス部 健康推進課",
+   "url": "https://www.city.muko.kyoto.jp/site/shinsei/1781.html"
+  },
+  "kenshin": "https://www.city.muko.kyoto.jp/site/shinsei/1784.html",
+  "sangocare": {
+   "url": "https://www.city.muko.kyoto.jp/site/shinsei/3228.html",
+   "fee": "ショートステイ（宿泊型）0円〜9,000円／デイサービス（日帰り型）0円～4,500円／アウトリーチ（訪問型）0円〜3,000円（利用料は所得により異なる）"
+  },
+  "shien": "https://www.city.muko.kyoto.jp/soshiki/21/11879.html",
+  "soudan": {
+   "name": "向日市こども家庭センター",
+   "tel": "子ども家庭課 075-874-3451／健康推進課（子育てコンシェルジュ）075-874-3687",
+   "url": "https://www.city.muko.kyoto.jp/soshiki/20/12281.html"
+  },
+  "note": "techoの窓口名はページのお問い合わせ先（健康推進課 075-874-2697）から"
+ },
+ {
+  "name": "長岡京市",
+  "techo": {
+   "label": "こども家庭センター（市役所3階37番窓口）",
+   "url": "https://www.city.nagaokakyo.lg.jp/0000002409.html"
+  },
+  "kenshin": "https://www.city.nagaokakyo.lg.jp/0000002409.html",
+  "sangocare": {
+   "url": "https://www.city.nagaokakyo.lg.jp/0000011065.html",
+   "fee": "短期入所（ショートステイ）型 1日あたり0円～7,500円／通所（デイサービス）型 1日あたり0円～3,750円／居宅訪問（アウトリーチ）型 1日あたり0円～3,000円（所得により異なります）"
+  },
+  "shien": "https://www.city.nagaokakyo.lg.jp/0000013258.html",
+  "soudan": {
+   "name": "長岡京市健康福祉部こども家庭センター 母子保健係",
+   "tel": "075-955-9705",
+   "url": "https://www.city.nagaokakyo.lg.jp/0000002409.html"
+  },
+  "note": "kenshinはtechoと同じ「妊娠がわかったら」ページ"
+ },
+ {
+  "name": "八幡市",
+  "techo": {
+   "label": "家庭支援課（健康福祉部福祉事務所）",
+   "url": "https://www.city.yawata.kyoto.jp/0000006466.html"
+  },
+  "kenshin": "https://www.city.yawata.kyoto.jp/0000006466.html",
+  "sangocare": {
+   "url": "https://www.city.yawata.kyoto.jp/0000005540.html",
+   "fee": null
+  },
+  "shien": "https://www.city.yawata.kyoto.jp/0000008621.html",
+  "soudan": {
+   "name": "八幡市こども家庭センター（市役所3階32番窓口・家庭支援課内）",
+   "tel": "075-983-1115",
+   "url": "https://www.city.yawata.kyoto.jp/0000010303.html"
+  },
+  "note": "産後ケアの金額はページ本文になく案内PDFにある。shienは「出産・子育て応援事業」ページ（妊婦のための支援給付「やわたっ子応援給付金」）"
+ },
+ {
+  "name": "京田辺市",
+  "techo": {
+   "label": "子育て支援課窓口",
+   "url": "https://www.city.kyotanabe.lg.jp/kosodate/0000000299.html"
+  },
+  "kenshin": "https://www.city.kyotanabe.lg.jp/kosodate/0000000300.html",
+  "sangocare": {
+   "url": "https://www.city.kyotanabe.lg.jp/kosodate/0000012192.html",
+   "fee": "短期入所型：9,000円（1日あたり）通所型：4,500円（1日あたり）居宅訪問型：2,000円（1日あたり）※出産1回につき5回まで、短期入所型・通所型は2,500円、居宅訪問型は2,000円を減免します。※市民税非課税世帯・生活保護世帯の方は無料"
+  },
+  "shien": "https://www.city.kyotanabe.lg.jp/kosodate/0000018790.html",
+  "soudan": {
+   "name": "京田辺市こども家庭センター 子育て相談室はぐはぐ（市役所1階 子育て支援課内）",
+   "tel": "0774-64-1376・1377",
+   "url": "https://www.city.kyotanabe.lg.jp/kosodate/0000008393.html"
+  },
+  "note": "府外受診の償還払いは https://www.city.kyotanabe.lg.jp/kosodate/0000003111.html"
+ },
+ {
+  "name": "京丹後市",
+  "techo": {
+   "label": "子育て支援課 はぐはぐ（妊娠出産子育て相談担当）",
+   "url": "https://www.city.kyotango.lg.jp/top/kosodate_kyoiku/ninshin/4309.html"
+  },
+  "kenshin": "https://www.city.kyotango.lg.jp/top/kosodate_kyoiku/ninshin/4309.html",
+  "sangocare": {
+   "url": "https://www.city.kyotango.lg.jp/top/kosodate_kyoiku/ninshin/7685.html",
+   "fee": "利用料：無料（全額市が助成します） ただし、食事代は各施設の料金に基づき自己負担（令和7年4月1日から）"
+  },
+  "shien": "https://www.city.kyotango.lg.jp/top/soshiki/kodomo/kosodatesien/5_1/21336.html",
+  "soudan": {
+   "name": "こども家庭センター（子育て支援課）はぐはぐ",
+   "tel": "0772-69-0135（直通）",
+   "url": "https://www.city.kyotango.lg.jp/top/kosodate_kyoiku/ninshin/6647.html"
+  }
+ },
+ {
+  "name": "南丹市",
+  "techo": null,
+  "kenshin": null,
+  "sangocare": null,
+  "shien": null,
+  "soudan": null,
+  "note": "公式サイト（www.city.nantan.kyoto.jp）がブラウザで空白ページになり、WebFetchも許可待ちで読めず。WebSearchでも南丹市ドメインのページが出なかった。全項目未確認（null）"
+ },
+ {
+  "name": "木津川市",
+  "techo": {
+   "label": "こども家庭支援課",
+   "url": "https://www.city.kizugawa.lg.jp/kosodate/0000001193.html"
+  },
+  "kenshin": "https://www.city.kizugawa.lg.jp/kosodate/0000002997.html",
+  "sangocare": {
+   "url": "https://www.city.kizugawa.lg.jp/kosodate/0000001203.html",
+   "fee": "1回あたりの利用料金 市町村民税課税世帯 宿泊型 6,000円（多胎加算420円）日帰り型 3,000円（多胎加算210円）訪問型 1,500円（多胎加算150円）／市町村民税非課税世帯 宿泊型 630円 日帰り型 210円 訪問型 0円（多胎加算0円）／生活保護世帯 宿泊型・日帰り型 0円"
+  },
+  "shien": "https://www.city.kizugawa.lg.jp/kosodate/0000001185.html",
+  "soudan": {
+   "name": "木津川市こども未来部こども家庭支援課",
+   "tel": "0774-75-1204",
+   "url": "https://www.city.kizugawa.lg.jp/kosodate/0000001193.html"
+  }
+ },
+ {
+  "name": "大山崎町",
+  "techo": {
+   "label": "健康課 健康増進係",
+   "url": "https://www.town.oyamazaki.kyoto.jp/annai/kenkoka/kenkokakenkozoshinkakari/kenkozukuri/2450.html"
+  },
+  "kenshin": "https://www.town.oyamazaki.kyoto.jp/annai/kenkoka/kenkokakenkozoshinkakari/kenkozukuri/2450.html",
+  "sangocare": {
+   "url": "https://www.town.oyamazaki.kyoto.jp/annai/kenkoka/kenkokakenkozoshinkakari/kenkozukuri/9708.html",
+   "fee": "利用料金（1日当たり）ショートステイ（宿泊型）10,000円／デイケア（日帰り型）5,000円／アウトリーチ（訪問型）3,000円 ※収入により、利用料金は変わります。"
+  },
+  "shien": "https://www.town.oyamazaki.kyoto.jp/annai/kenkoka/kenkokakenkozoshinkakari/kenkozukuri/11046.html",
+  "soudan": {
+   "name": "大山崎町こども家庭センター（福祉課 児童福祉係）",
+   "tel": "075-956-2101（代表）",
+   "url": "https://www.town.oyamazaki.kyoto.jp/annai/fukushika/jidofukushikakari/11402.html"
+  },
+  "note": "techo・kenshinは「あかちゃんに関すること」ページ（親子健康手帳の交付、受診券つづり、償還払い）"
+ },
+ {
+  "name": "久御山町",
+  "techo": {
+   "label": "民生部子育て支援課（1階）窓口",
+   "url": "https://www.town.kumiyama.lg.jp/0000000093.html"
+  },
+  "kenshin": "https://www.town.kumiyama.lg.jp/0000000093.html",
+  "sangocare": {
+   "url": "https://www.town.kumiyama.lg.jp/0000004664.html",
+   "fee": "金額の記載なし。「利用料金（自己負担金）の半額を助成」"
+  },
+  "shien": "https://www.town.kumiyama.lg.jp/0000006080.html",
+  "soudan": {
+   "name": "久御山町役場 民生部子育て支援課",
+   "tel": "075-631-9904、0774-45-3905",
+   "url": "https://www.town.kumiyama.lg.jp/0000000093.html"
+  },
+  "note": "こども家庭センターの名前のページは見つからず"
+ },
+ {
+  "name": "井手町",
+  "techo": {
+   "label": "井手町立保健センター",
+   "url": "https://www.town.ide.kyoto.jp/kurashinojoho/kenko_iryou/boshihoken/1394765758149.html"
+  },
+  "kenshin": "https://www.town.ide.kyoto.jp/kurashinojoho/kenko_iryou/boshihoken/1394765758149.html",
+  "sangocare": null,
+  "shien": "https://www.town.ide.kyoto.jp/kurashinojoho/kenko_iryou/boshihoken/5536.html",
+  "soudan": {
+   "name": "井手町こども家庭センター",
+   "tel": "0774-82-3415",
+   "url": "https://www.town.ide.kyoto.jp/kyouiku_fukushi/ninshin_syussan/5001.html"
+  },
+  "note": "産後ケアのページはサイト内約150ページを見ても見つからず"
+ },
+ {
+  "name": "宇治田原町",
+  "techo": {
+   "label": "はぐくむセンター（地域子育て支援センター）",
+   "url": "https://www.town.ujitawara.kyoto.jp/soshiki/kosodateshienka/kosodatejoho/4/554.html"
+  },
+  "kenshin": "https://www.town.ujitawara.kyoto.jp/soshiki/kosodateshienka/kosodatejoho/4/554.html",
+  "sangocare": {
+   "url": "https://www.town.ujitawara.kyoto.jp/soshiki/kosodateshienka/kosodatejoho/4/3952.html",
+   "fee": "居宅訪問型：1回 2,000円／通所型：1回 4,500円／短期入所型：1回 9,000円 ※住民税課税世帯の方は、申し込み時に減免申請をしていただきますと短期入所型・通所型は2,500円、居宅訪問型は2,000円を減免します。※生活保護世帯、住民税非課税世帯は無料。"
+  },
+  "shien": "https://www.town.ujitawara.kyoto.jp/soshiki/kosodateshienka/kosodatejoho/2/3844.html",
+  "soudan": {
+   "name": "宇治田原町こども家庭センター",
+   "tel": "0774-88-6651／0774-88-6652（相談・こどもほっとライン）",
+   "url": "https://www.town.ujitawara.kyoto.jp/soshiki/kosodateshienka/kosodatejoho/3781.html"
+  },
+  "note": "sangocareは「令和8年度妊娠・出産包括支援事業」ページ内の産後ケア事業の項"
+ },
+ {
+  "name": "笠置町",
+  "techo": {
+   "label": "保健福祉課",
+   "url": "https://www.town.kasagi.lg.jp/contents_detail.php?co=cat&frmId=7&frmCd=4-8-2-0-0"
+  },
+  "kenshin": "https://www.town.kasagi.lg.jp/contents_detail.php?co=cat&frmId=7&frmCd=4-8-2-0-0",
+  "sangocare": null,
+  "shien": null,
+  "soudan": {
+   "name": "笠置町役場 保健福祉課",
+   "tel": "0743-95-2303",
+   "url": "https://www.town.kasagi.lg.jp/contents_detail.php?co=cat&frmId=7&frmCd=4-8-2-0-0"
+  },
+  "note": "「母と子の健康・育児」ページ（2022年8月16日）1枚に手帳と妊婦健診14回公費負担の記載。産後ケア・妊婦のための支援給付・こども家庭センターのページはサイトマップと妊娠出産／子育て／福祉カテゴリを全部見ても見つからず"
+ },
+ {
+  "name": "和束町",
+  "techo": {
+   "label": "福祉課（本文の表記。問い合わせ先は保健福祉課）",
+   "url": "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1592.html"
+  },
+  "kenshin": "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1591.html",
+  "sangocare": {
+   "url": "https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/1529.html",
+   "fee": "利用料金 市町村民税課税世帯 宿泊型：6,000円（多胎加算420円）日帰り型：3,000円（多胎加算210円）／市町村民税非課税世帯 宿泊型：630円 日帰り型：210円（多胎加算0円）／生活保護世帯 宿泊型・日帰り型 0円"
+  },
+  "shien": null,
+  "soudan": {
+   "name": "和束町 子育て世代包括支援センター（保健福祉課）",
+   "tel": "0774-78-3006",
+   "url": "https://www.town.wazuka.lg.jp/kosodate_kyoiku/hokatsushiencenter/2065.html"
+  },
+  "note": "国の妊婦のための支援給付のページは見つからず。町独自の「和束町子育て応援給付金」（200,000茶源郷ポイント、出生後）は https://www.town.wazuka.lg.jp/kosodate_kyoiku/ninshin_shussan/3064.html"
+ },
+ {
+  "name": "精華町",
+  "techo": {
+   "label": "健康福祉環境部 こども家庭課 母子保健係（精華町防災保健センター みらっぷ）",
+   "url": "https://www.town.seika.kyoto.jp/kosodate/ninshin/2/7439.html"
+  },
+  "kenshin": "https://www.town.seika.kyoto.jp/kosodate/ninshin/2/7439.html",
+  "sangocare": {
+   "url": "https://www.town.seika.kyoto.jp/kosodate/ninshin/12426.html",
+   "fee": "【宿泊型】1日あたり 課税世帯6,000円[多胎420円]／非課税世帯630円[0円]／生活保護世帯0円[0円] 【日帰り型】1日あたり 課税世帯3,000円[210円]／非課税世帯210円[0円]／生活保護世帯0円[0円]（市町村民税課税世帯は利用料の一部を助成）"
+  },
+  "shien": "https://www.town.seika.kyoto.jp/kakuka/mirap/2021_2/2/4/27927.html",
+  "soudan": {
+   "name": "精華町こども家庭センター（こども家庭課 母子保健係）",
+   "tel": "0774-95-1931",
+   "url": "https://www.town.seika.kyoto.jp/kosodate/ninshin/21804.html"
+  },
+  "note": "kenshinはtechoと同じページ（受診券の交付と償還払いの申請の記載）"
+ },
+ {
+  "name": "南山城村",
+  "techo": {
+   "label": "南山城村保健福祉センター",
+   "url": "https://www.vill.minamiyamashiro.lg.jp/0000000816.html"
+  },
+  "kenshin": "https://www.vill.minamiyamashiro.lg.jp/0000000816.html",
+  "sangocare": {
+   "url": "https://www.vill.minamiyamashiro.lg.jp/0000002043.html",
+   "fee": "1件当たりの利用料 宿泊型（一泊二日）A：市町村民税課税世帯 6,000円［多胎加算420円］／B：非課税世帯 630円［0円］／C：生活保護世帯 0円。日帰り型 A：3,000円［210円］／B：210円［0円］／C：0円"
+  },
+  "shien": null,
+  "soudan": {
+   "name": "南山城村保健福祉センター",
+   "tel": "0743-93-0294",
+   "url": "https://www.vill.minamiyamashiro.lg.jp/0000000816.html"
+  },
+  "note": "妊婦のための支援給付は手帳ページに申請のための持ち物の記載だけで、専用ページは見つからず。村独自の子育て応援給付金（https://www.vill.minamiyamashiro.lg.jp/0000002376.html）は別の制度"
+ },
+ {
+  "name": "京丹波町",
+  "techo": {
+   "label": "京丹波町健康福祉部健康推進課（瑞穂保健福祉センター）",
+   "url": "https://www.town.kyotamba.kyoto.jp/kosodate_kyoiku/genrebetsudesagasu/boshinokenko/ninshin_shussan/tetsuzuki_todokede_ninshin_shussan/3882.html"
+  },
+  "kenshin": "https://www.town.kyotamba.kyoto.jp/kosodate_kyoiku/genrebetsudesagasu/boshinokenko/ninshin_shussan/tetsuzuki_todokede_ninshin_shussan/3882.html",
+  "sangocare": null,
+  "shien": "https://www.town.kyotamba.kyoto.jp/kosodate_kyoiku/genrebetsudesagasu/boshinokenko/ninshin_shussan/tetsuzuki_todokede_ninshin_shussan/6877.html",
+  "soudan": {
+   "name": "京丹波町こども家庭センター（瑞穂保健福祉センター内）",
+   "tel": "0771-86-1800（妊娠・出産・乳幼児健診など）／0771-86-1120（児童相談など）",
+   "url": "https://www.town.kyotamba.kyoto.jp/kakukakarasagasu/kenkosuishinka/gyomuannai/kodomokateisenta/7842.html"
+  },
+  "note": "産後ケア事業のページはサイト内約200ページを見ても見つからず（マタニティ・産後ヨガ教室のみ）"
+ },
+ {
+  "name": "伊根町",
+  "techo": {
+   "label": "伊根町保健センター（保健福祉課 健康増進係）",
+   "url": "https://www.town.ine.kyoto.jp/soshiki/hokenfukushi/1/2/3/293.html"
+  },
+  "kenshin": "https://www.town.ine.kyoto.jp/soshiki/hokenfukushi/1/2/3/208.html",
+  "sangocare": {
+   "url": "https://www.town.ine.kyoto.jp/soshiki/hokenfukushi/1/2/2/367.html",
+   "fee": "自己負担 町民税課税世帯：1泊6,000円 町民税非課税・生活保護世帯：1泊1,500円"
+  },
+  "shien": null,
+  "soudan": {
+   "name": "伊根町子育て世代包括支援センター",
+   "tel": "0772-32-0082",
+   "url": "https://www.town.ine.kyoto.jp/mokuteki/ninshin_shussan/1177.html"
+  },
+  "note": "妊婦のための支援給付のページはサイト内約250ページを見ても見つからず"
+ },
+ {
+  "name": "与謝野町",
+  "techo": {
+   "label": "与謝野町子育て世代包括支援センター（子育て応援課内／加悦庁舎2階）",
+   "url": "https://www.town.yosano.lg.jp/parenting/pregnancy-childbirth/pregnancy/boshitecho/"
+  },
+  "kenshin": "https://www.town.yosano.lg.jp/parenting/pregnancy-childbirth/pregnancy/entry_671/",
+  "sangocare": {
+   "url": "https://www.town.yosano.lg.jp/parenting/pregnancy-childbirth/postpartum/entry_687/",
+   "fee": "料金（短期入所型／1泊あたり）1,500円（住民税非課税世帯）6,000円（その他の世帯）／料金（通所型／1日あたり）500円（住民税非課税世帯）2,000円（その他の世帯）"
+  },
+  "shien": null,
+  "soudan": {
+   "name": "与謝野町子育て世代包括支援センター（加悦庁舎2階 子育て応援課内）",
+   "tel": "0772-43-9024",
+   "url": "https://www.town.yosano.lg.jp/parenting/pregnancy-childbirth/pregnancy/408568/"
+  },
+  "note": "産後ケアページの最終更新は2023年4月。別に令和8年度「産後ママのリフレッシュケア」（デイサービス、1回あたり1,000円）https://www.town.yosano.lg.jp/parenting/pregnancy-childbirth/postpartum/535003/ 。妊婦のための支援給付のページは見つからず"
+ }
+]

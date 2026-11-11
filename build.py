@@ -61,6 +61,7 @@ for h in H:
         if s[0].startswith("京都市 スマイルママ") : s[0] = "京都市 スマイルママ・ホッと事業 施設一覧（令和8年8月）"
 H.sort(key=lambda h: order.index(h["ward"]))
 area_of = {w:a for a in AREAS for w in a["list"]}
+MUNI = {m["name"]:m for m in json.load(open("data/municipal.json"))} if os.path.exists("data/municipal.json") else {}
 
 esc = lambda s: html.escape(str(s), quote=True)
 yen = lambda n: f"{n:,}円"
@@ -575,7 +576,21 @@ for a in AREAS:
     n_pl = sum(1 for h in hs if h["painless"]["ok"] is True); n_rf = sum(1 for h in hs if h["room"].get("perDay")==0); n_oi = sum(1 for h in hs if h["oiwai"]["ok"] is True)
     n_js = sum(1 for h in hs if "助産所" in h["type"])
     summ = f'<ul class="areasum"><li>お産ができる施設：{len(hs)}か所（うち助産所 {n_js}か所）</li><li>お母様の希望で無痛分娩ができると公開：{n_pl}か所</li><li>ふつうの個室を追加なしで使えると公開：{n_rf}か所</li><li>お祝い膳があると公開：{n_oi}か所</li></ul><p class="note">公開されている情報と、産院への問い合わせでわかったことだけを数えています。くわしい条件は各産院のページでたしかめてください。</p>' if hs else ""
-    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{summ}{notes}{htable(hs)}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
+    _mn = ["京都市"] if a["slug"]=="kyoto-shi" else a["list"]
+    _ml = []
+    for _n in _mn:
+        m = MUNI.get(_n)
+        if not m: continue
+        L = []
+        if m.get("techo") and m["techo"].get("url"): L.append(f'<a href="{esc(m["techo"]["url"])}" target="_blank" rel="noopener">妊娠届・母子健康手帳</a>')
+        if m.get("kenshin"): L.append(f'<a href="{esc(m["kenshin"])}" target="_blank" rel="noopener">妊婦健診の助成</a>')
+        if m.get("sangocare") and m["sangocare"].get("url"): L.append(f'<a href="{esc(m["sangocare"]["url"])}" target="_blank" rel="noopener">産後ケア</a>')
+        if m.get("shien"): L.append(f'<a href="{esc(m["shien"])}" target="_blank" rel="noopener">妊婦のための支援給付</a>')
+        so = m.get("soudan") or {}
+        st = (f'相談：{esc(so.get("name") or "")}' + (f'（{esc(so["tel"])}）' if so.get("tel") else "")) if so.get("name") or so.get("tel") else ""
+        if L or st: _ml.append(f'<li><b>{_n}</b>：' + "／".join(L) + (("<br>" if L else "") + st if st else "") + '</li>')
+    munihtml = (f'<h2 style="margin-top:1.6em">{a["label"]}の市町村の窓口（妊娠・出産）</h2><ul class="muni">' + "".join(_ml) + '</ul><p class="note">市町村の公式ページへのリンクです（2026年11月に確認）。ページが見つからなかった項目はのせていません。くわしくは各市町村にお問い合わせください。</p>') if _ml else ""
+    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{summ}{notes}{htable(hs)}{munihtml}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
     add(f"area-{a['slug']}.html", f"{a['label']}の産院・助産所（{len(hs)}か所）の個室・無痛分娩・お祝い膳", f"京都府{a['label']}（{'・'.join(a['list'])}）でお産ができる産院・助産所{len(hs)}か所の、個室・無痛分娩・お祝い膳・立ち会いのちがいを出どころつきでまとめました。", body, "area", [("トップ","index.html"),("エリアでさがす","area.html"),(a["label"],f"area-{a['slug']}.html")])
 area_index += '<p class="note">「なし」は、その市町村の中でお産ができる施設が確認できなかったところです。</p></section>'
 add("area.html", "エリアでさがす｜京都府の産院・助産所", "京都府を8つの地域に分けて、お産ができる産院・助産所をのせています。", area_index, "area", [("トップ","index.html"),("エリアでさがす","area.html")])
