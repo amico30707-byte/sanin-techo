@@ -631,7 +631,18 @@ for art in ARTICLES:
     ART_META[f"yomimono-{art['id']}.html"] = art["date"]
     body = f'<article class="post"><span class="eyebrow">{art["date"]}</span><h1>{esc(art["title"])}</h1>{PRNOTE if art["pr"] else ""}{md(art["body"])}<div class="actions"><a class="btn main" href="kuraberu.html">京都の産院をくらべる</a><a class="btn line" href="{parent[1]}">ほかの記事</a></div>{relhtml}</article>'
     add(f"yomimono-{art['id']}.html", art["title"], first_para, body, nav, [("トップ","index.html"),parent,(art["title"],f"yomimono-{art['id']}.html")])
-add("yomimono.html", "読みもの｜無償化・産後ケア・産院えらび", "出産費用の無償化、京都府の産後ケア、無痛分娩ができる産院など、産院えらびの前に知っておきたいことをまとめています。", f'<section style="border-top:0"><span class="tag">読みもの</span><h1 class="ph">知っておきたいこと</h1>{cards(main_arts)}</section>', "yomimono", [("トップ","index.html"),("読みもの","yomimono.html")])
+CATS = [("京都の産院のデータ", ["hiyou-kyoto","mutsu-kyoto","koshitsu-kyoto","oiwai-kyoto","tachiai","yoyaku","josanjo","bunben-kyoto"]),
+        ("無償化・お金・制度", ["mushouka","mushouka-faq","ichijikin","teiou","shien-kyufu","kenshin-kyoto"]),
+        ("産院のえらび方", ["erabikata","checklist","kotoba","satogaeri"]),
+        ("産後ケア", ["sangocare-fu","sangocare"])]
+_seen = set(); _grp = ""
+for _t, _ids in CATS:
+    _arts = [a for i in _ids for a in main_arts if a["id"]==i]
+    _seen |= {a["id"] for a in _arts}
+    if _arts: _grp += f'<h2 style="margin-top:1.4em">{_t}</h2>' + cards(_arts)
+_rest = [a for a in main_arts if a["id"] not in _seen]
+if _rest: _grp += '<h2 style="margin-top:1.4em">そのほか</h2>' + cards(_rest)
+add("yomimono.html", "読みもの｜無償化・産後ケア・産院えらび", "出産費用の無償化、京都府の産後ケア、無痛分娩ができる産院など、産院えらびの前に知っておきたいことをまとめています。", f'<section style="border-top:0"><span class="tag">読みもの</span><h1 class="ph">知っておきたいこと</h1>{_grp}</section>', "yomimono", [("トップ","index.html"),("読みもの","yomimono.html")])
 add("junbi.html", "出産じゅんび｜入院バッグ・ベビー用品・内祝い", "入院バッグの中身、ベビー用品の準備、出産内祝いのきほんをまとめています。", f'<section style="border-top:0"><span class="tag">じゅんび</span><h1 class="ph">出産までに、そろえるもの</h1><p class="lead">このページの記事には、広告（アフィリエイトリンク）がふくまれます。</p>{cards(junbi_arts)}</section>', "junbi", [("トップ","index.html"),("出産じゅんび","junbi.html")])
 
 # サイトについて・広告・プライバシー・問い合わせ
