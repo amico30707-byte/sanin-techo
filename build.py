@@ -135,7 +135,54 @@ def gen_closure_article():
               "", f"（出どころ：各病院のお知らせ・ホームページ、厚生労働省「出産なび」。{CONFIG['CHECKED']}に調べました）"]
     return {"id":"bunben-kyoto","title":"京都府でお産ができる場所が減っています｜お産をやめた病院と、施設がない市町村（2026年）","date":CONFIG["CHECKED"],"pr":False,"body":"\n".join(lines)}
 
-ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + [gen_painless_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
+def gen_room_article():
+    lines = ["出産費用の無償化が始まると、お産そのものの費用は産院によるちがいが小さくなります。そのぶん、個室をえらぶかどうかや、個室の料金が、じぶんで払う部分として大きくなります。京都府の産院の個室の料金を、地域ごとにまとめました。",
+             "",
+             "ならび順は地域ごとで、おすすめ順ではありません。金額は、公開されている1日あたりの追加の料金（差額）です。お部屋のタイプによって金額がちがう産院では、いちばん低い金額を目安にのせ、くわしくは各産院のページに書いています。",
+             "",
+             "## 見かたのポイント",
+             "- 個室代の目安：5日入院すると、1日の差額 × 5日ぶんがかかります。たとえば1日5,000円なら、5日で25,000円です",
+             "- 「お部屋代がお産の料金にふくまれています」と書いてある産院は、個室でも追加がかからないか、お産の料金の中に入っています",
+             "- 全室個室の産院でも、お部屋のタイプによって追加の料金がちがうことがあります",
+             "- 無償化のあと、個室の料金がどのようにあつかわれるかは、まだ決まっていない部分があります"]
+    for a in AREAS:
+        hs = [h for h in H if h["ward"] in a["list"]]
+        if not hs: continue
+        lines += ["", f"## {a['label']}"]
+        for h in hs:
+            r = h["room"]; pd = r.get("perDay")
+            head = "追加なし" if pd == 0 else ((f"1日{yen(pd)}から" + ("（税込の目安）" if "税別" in r["text"] else "")) if pd else "金額は公開されていません")
+            if pd is None and "公開されていません" in r["text"]: head = ""
+            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：" + (head + "。" if head else "") + r["text"])
+    known = sum(1 for h in H if h["room"].get("perDay") is not None)
+    lines += ["", "## まだ公開されていない産院", f"{len(H)}か所のうち、個室の追加の料金がわかっているのは{known}か所です。のこりの産院は、さんいん手帖から問い合わせて、わかりしだい書きくわえていきます。",
+              "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
+    return {"id":"koshitsu-kyoto","title":"京都府の産院の個室代（1日あたりの追加料金）まとめ｜無償化のあとはじぶんで払う部分（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
+
+def gen_oiwai_article():
+    lines = ["お産のあとに出る「お祝い膳」は、産院ごとにちがいが大きいところです。追加の料金がかかるかどうかもふくめて、公開されている情報と、産院に問い合わせてわかったことを地域ごとにまとめました。",
+             "",
+             "ならび順は地域ごとで、おすすめ順ではありません。メニューや出る日は変わることがあるので、かならず産院でたしかめてください。"]
+    for a in AREAS:
+        hs = [h for h in H if h["ward"] in a["list"] and h["oiwai"]["ok"] is True]
+        if not hs: continue
+        lines += ["", f"## {a['label']}"]
+        for h in hs:
+            c = h["oiwai"].get("cost")
+            head = "追加料金なし" if c == 0 else ((f"{yen(c)}" + ("（税込の目安）" if "税別" in h["oiwai"]["text"] else "")) if c else "")
+            if head and ("追加料金なし" in h["oiwai"]["text"] or "無料" in h["oiwai"]["text"] or "円" in h["oiwai"]["text"]): head = "" if c == 0 else head
+            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：" + (head + "。" if head else "") + h["oiwai"]["text"])
+    no = [h for h in H if h["oiwai"]["ok"] is False]
+    if no:
+        lines += ["", "## お祝い膳はないと案内している産院"]
+        for h in no:
+            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：{h['oiwai']['text']}")
+    unk = [h for h in H if h["oiwai"]["ok"] is None]
+    lines += ["", "## まだ公開されていない産院", f"このほか{len(unk)}か所の産院は、お祝い膳があるかどうかが公開されていません。さんいん手帖では、産院に問い合わせて、わかりしだい書きくわえていきます。",
+              "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
+    return {"id":"oiwai-kyoto","title":"京都府の産院のお祝い膳まとめ｜追加料金はかかる？（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
+
+ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + [gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
 for a in ARTICLES:
     a["body"] = a["body"].replace("さんいん手帖の「京都の産院をくらべる」ページ", "さんいん手帖の「[京都の産院をくらべる](kuraberu.html)」ページ").replace("記事「京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金」","記事「[京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金](yomimono-sangocare.html)」")
 
