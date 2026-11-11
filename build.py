@@ -610,6 +610,7 @@ for h in H:
 <section>
   <h2>情報の出どころ</h2>
   <ul class="srcs">{srcs}</ul>
+  <p class="note">のせている内容にまちがいや、新しい情報があるときは、<a href="contact.html">お問い合わせ</a>からお知らせください。産院の方からのご連絡も受けつけています（掲載料はいただいていません）。</p>
   <p class="note">料金やサービスは変わることがあります。かならず産院にご確認ください。まちがいを見つけたら、<a href="contact.html">お問い合わせ</a>からお知らせください。</p>
   <div class="actions"><a class="btn line" href="kuraberu.html">ほかの産院とくらべる</a></div>
 </section>
