@@ -173,6 +173,41 @@ def gen_total_article():
               "", f"（出どころ：厚生労働省「出産なび」〔2025年4〜9月の請求の実績〕。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
     return {"id":"hiyou-kyoto","title":"京都府の産院の出産費用（総額）一覧｜地域ごと・出産なびの実績から（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
 
+def gen_watsu_article():
+    wa = [h for h in H if "和痛" in h["painless"]["text"] or any("和痛" in e for e in h.get("extra",[]))]
+    lines = ["「和痛分娩（わつうぶんべん）」ということばは、産院によって指している方法がちがいます。京都府の産院で、ホームページや国の「出産なび」に「和痛分娩」と書かれているところを、地域ごとにまとめました。",
+             "",
+             "ならび順は地域ごとで、おすすめ順ではありません。お産の方法は、かならず医師・助産師と相談してきめてください。",
+             "",
+             "## 和痛分娩とは",
+             "- 和痛分娩は「お産の痛みをやわらげる方法」をまとめてよぶことばで、決まった定義はありません",
+             "- 産院によって、せなかから細い管を入れてお薬を入れる「硬膜外麻酔（こうまくがいますい）」のことを和痛分娩とよぶことも、点滴や注射などで痛みを少しやわらげる方法のことを和痛分娩とよぶこともあります",
+             "- 「無痛分娩」とよぶか「和痛分娩」とよぶかは産院のきめかたで、ことばだけでは中身がわかりません。どんな方法か、いつできるか（24時間か、日にちをきめるか）、追加の料金はいくらかを、産院にたしかめるのが安心です",
+             "- 硬膜外麻酔のしくみや、よく説明される注意点は、記事「[無痛分娩のきほん](yomimono-mutsu-kihon.html)」にまとめています",
+             "",
+             "## 京都府で「和痛分娩」について案内がある産院",
+             "ホームページなどに「和痛分娩」ということばがある産院です（「和痛分娩はしていない」と案内しているところもふくみます）。"]
+    for a in AREAS:
+        hs = [h for h in wa if h["ward"] in a["list"]]
+        if not hs: continue
+        lines += ["", f"## {a['label']}の和痛分娩"]
+        for h in hs:
+            ex = "".join("。" + e for e in h.get("extra",[]) if "和痛" in e)
+            lines.append(f"- [{h['name']}](sanin-{h['id']}.html)（{h['ward']}）：{h['painless']['text']}{ex}")
+    lines += ["",
+              "## 硬膜外麻酔の無痛分娩ができる産院もあわせて",
+              f"京都府で、お母様の希望で無痛分娩ができると公開している産院は{sum(1 for h in H if h['painless']['ok'] is True)}か所です。料金や、24時間できるかどうかは、記事「[京都府で無痛分娩ができる産院と追加料金](yomimono-mutsu-kyoto.html)」で地域ごとに見られます。",
+              "",
+              "## 産院にたしかめたいこと",
+              "- 「和痛分娩」は、どんな方法ですか（硬膜外麻酔か、点滴や注射か）",
+              "- 希望すればできますか。いつまでに申しこみますか",
+              "- 夜や休みの日のお産でもできますか",
+              "- 追加の料金はいくらですか",
+              "- できない場合（お体の状態など）はありますか",
+              "",
+              f"（出どころ：各産院のホームページ、厚生労働省「出産なび」、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月17日に調べました）"]
+    return {"id":"watsu","title":"和痛分娩とは？京都府で和痛分娩をしている産院と、無痛分娩とのちがい（2026年11月）","date":"2026年11月17日","pr":False,"body":"\n".join(lines)}
+
 def gen_room_article():
     lines = ["出産費用の無償化が始まると、お産そのものの費用は産院によるちがいが小さくなります。そのぶん、個室をえらぶかどうかや、個室の料金が、じぶんで払う部分として大きくなります。京都府の産院の個室の料金を、地域ごとにまとめました。",
              "",
@@ -218,7 +253,7 @@ def gen_oiwai_article():
               "", f"（出どころ：厚生労働省「出産なび」、各産院のホームページ、産院への問い合わせ。{CONFIG['CHECKED']}〜2026年11月11日に調べました）"]
     return {"id":"oiwai-kyoto","title":"京都府の産院のお祝い膳まとめ｜追加料金はかかる？（2026年11月）","date":"2026年11月11日","pr":False,"body":"\n".join(lines)}
 
-ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + read_articles("content/articles_seido.md") + read_articles("content/articles_erabi.md") + read_articles("content/articles_okane.md") + [gen_total_article(), gen_painless_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
+ARTICLES = read_articles("content/articles.md") + read_articles("content/articles_data_static.md") + read_articles("content/articles_seido.md") + read_articles("content/articles_erabi.md") + read_articles("content/articles_okane.md") + [gen_total_article(), gen_painless_article(), gen_watsu_article(), gen_room_article(), gen_oiwai_article(), gen_closure_article()] + read_articles("content/articles_junbi.md")
 for a in ARTICLES:
     a["body"] = a["body"].replace("さんいん手帖の「京都の産院をくらべる」ページ", "さんいん手帖の「[京都の産院をくらべる](kuraberu.html)」ページ").replace("記事「京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金」","記事「[京都市の産後ケア（スマイルママ・ホッと事業）の使い方と料金](yomimono-sangocare.html)」")
 
@@ -590,8 +625,16 @@ for a in AREAS:
         st = (f'相談：{esc(so.get("name") or "")}' + (f'（{esc(so["tel"])}）' if so.get("tel") else "")) if so.get("name") or so.get("tel") else ""
         if L or st: _ml.append(f'<li><b>{_n}</b>：' + "／".join(L) + (("<br>" if L else "") + st if st else "") + '</li>')
     munihtml = (f'<h2 style="margin-top:1.6em">{a["label"]}の市町村の窓口（妊娠・出産）</h2><ul class="muni">' + "".join(_ml) + '</ul><p class="note">市町村の公式ページへのリンクです（2026年11月に確認）。ページが見つからなかった項目はのせていません。くわしくは各市町村にお問い合わせください。</p>') if _ml else ""
-    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{summ}{notes}{htable(hs)}{munihtml}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
-    add(f"area-{a['slug']}.html", f"{a['label']}の産院・助産所（{len(hs)}か所）の個室・無痛分娩・お祝い膳", f"京都府{a['label']}（{'・'.join(a['list'])}）でお産ができる産院・助産所{len(hs)}か所の、個室・無痛分娩・お祝い膳・立ち会いのちがいを出どころつきでまとめました。", body, "area", [("トップ","index.html"),("エリアでさがす","area.html"),(a["label"],f"area-{a['slug']}.html")])
+    def _sec(ttl, fn):
+        if not hs: return ""
+        return f'<h2 style="margin-top:1.6em">{a["label"]}の{ttl}</h2><ul class="topic">' + "".join(f'<li><a href="sanin-{h["id"]}.html">{esc(h["name"])}</a>（{h["ward"]}）：{esc(fn(h))}</li>' for h in hs) + '</ul>'
+    topics = (_sec("立ち会い出産・面会", lambda h: (h.get("tachiai") or "公開されていません") + ("。" + h["family"] if h.get("family") else ""))
+              + _sec("無痛分娩・和痛分娩", lambda h: h["painless"]["text"])
+              + _sec("個室", lambda h: h["room"]["text"])
+              + _sec("お祝い膳", lambda h: h["oiwai"]["text"])
+              + ('<p class="note">ならび順は市区町村ごとで、おすすめ順ではありません。「和痛分娩」は、産院によって麻酔をつかう方法のことも、注射などの別の方法のこともあります。くわしくは<a href="yomimono-watsu.html">和痛分娩とは</a>をごらんください。</p>' if hs else ""))
+    body = f'<section style="border-top:0"><span class="tag">エリア</span><h1 class="ph">{a["label"]}の産院・助産所（{len(hs)}か所）</h1><p class="lead">{"・".join(a["list"])}で、いまお産ができる施設です。ならび順は市区町村ごとで、おすすめ順ではありません。</p>{summ}{notes}{htable(hs)}{topics}{munihtml}<div class="actions"><a class="btn main" href="kuraberu.html">じぶん払いの目安を計算する</a><a class="btn line" href="area.html">ほかのエリア</a></div></section>'
+    add(f"area-{a['slug']}.html", f"{a['label']}の産院・助産所{len(hs)}か所｜立ち会い出産・無痛分娩（和痛分娩）・個室・お祝い膳", f"京都府{a['label']}（{'・'.join(a['list'])}）でお産ができる産院・助産所{len(hs)}か所の、個室・無痛分娩・お祝い膳・立ち会いのちがいを出どころつきでまとめました。", body, "area", [("トップ","index.html"),("エリアでさがす","area.html"),(a["label"],f"area-{a['slug']}.html")])
 area_index += '<p class="note">「なし」は、その市町村の中でお産ができる施設が確認できなかったところです。</p></section>'
 add("area.html", "エリアでさがす｜京都府の産院・助産所", "京都府を8つの地域に分けて、お産ができる産院・助産所をのせています。", area_index, "area", [("トップ","index.html"),("エリアでさがす","area.html")])
 
@@ -662,7 +705,7 @@ for art in ARTICLES:
         if qa: ART_FAQ[f"yomimono-{art['id']}.html"] = qa
     body = f'<article class="post"><span class="eyebrow">{art["date"]}</span><h1>{esc(art["title"])}</h1>{PRNOTE if art["pr"] else ""}{md(art["body"])}<div class="actions"><a class="btn main" href="kuraberu.html">京都の産院をくらべる</a><a class="btn line" href="{parent[1]}">ほかの記事</a></div>{relhtml}</article>'
     add(f"yomimono-{art['id']}.html", art["title"], first_para, body, nav, [("トップ","index.html"),parent,(art["title"],f"yomimono-{art['id']}.html")])
-CATS = [("京都の産院のデータ", ["hiyou-kyoto","mutsu-kyoto","koshitsu-kyoto","oiwai-kyoto","tachiai","yoyaku","josanjo","bunben-kyoto"]),
+CATS = [("京都の産院のデータ", ["hiyou-kyoto","mutsu-kyoto","watsu","koshitsu-kyoto","oiwai-kyoto","tachiai","yoyaku","josanjo","bunben-kyoto"]),
         ("無償化・お金・制度", ["mushouka","mushouka-faq","okane-zentai","ichijikin","teiou","shien-kyufu","kenshin-kyoto","sankyu-ikukyu","iryouhi-koujo"]),
         ("産院のえらび方", ["erabikata","checklist","mutsu-kihon","kotoba","satogaeri"]),
         ("産後ケア・産後のお手伝い", ["sangocare-fu","sangocare","sango-sapo"])]
